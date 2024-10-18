@@ -1,51 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-            rel="stylesheet">
-        <title>Blockchain</title>
-        <style>
-        body {
-            font-family: Helvetica, Arial, sans-serif;
-        }
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <title>Consensus Mechanisms</title>
+    <style>
+      body {
+        font-family: Helvetica, Arial, sans-serif;
+      }
     </style>
-    </head>
+  </head>
 
-    <body>
-        <header class="bg-gray-50 p-6 text-center text-black items-center">
-            <nav>
-                <ul class="flex space-x-4 justify-between">
-                    <div>
-                        <h1 class="pl-72"><a href="index.html"
-                                class="text-black hover:underline">web3
-                                shit</a></h1>
+  <body>
+    <header class="bg-gray-50 p-6 text-center text-black items-center">
+      <nav>
+        <ul class="flex space-x-4 justify-between">
+          <div>
+            <h1 class="pl-72">
+              <a href="index.html" class="text-black hover:underline"
+                >web3 shit</a
+              >
+            </h1>
+          </div>
+          <div class="flex space-x-6 pr-72">
+            <li>
+              <a href="index.html" class="text-black hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="#resources" class="text-black hover:underline"
+                >Resources</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <h1 class="pt-24 text-xl">Blockchain</h1>
+      <h1 class="text-black text-6xl pt-3">Consensus Mechanisms</h1>
+    </header>
 
-                    </div>
-                    <div class="flex space-x-6 pr-72">
-                        <li><a href="index.html"
-                                class="text-black hover:underline">Home</a></li>
-                        <li><a href="#resources"
-                                class="text-black hover:underline">Resources</a></li>
-                    </div>
-                </ul>
-            </nav>
-            <h1 class="pt-24 text-xl">Blockchain</h1>
-            <h1 class="text-black text-6xl pt-3">Consensus Mechanisms</h1>
-        </header>
+    <main class="p-12 pl-80 pr-80">
+      <section class="my-4">
+        <h2 class="text-xl mt-2">What is Consensus?</h2>
+        <p class="mt-2">
+          In the blockchain, a consensus mechanism is a system that validates a
+          transaction and marks it as authentic. This mechanism lists all valid
+          transactions of a coin in a blockchain to build trust in the coin
+          among traders. Several currencies, such as Bitcoin, Ethereum etc., use
+          this system for security purposes.
+        </p>
+        <h2 class="text-xl mt-6">Proof of Work (PoW)</h2>
+        <p class="mt-2">
+          Proof of work (PoW) is a decentralized consensus mechanism used in
+          many cryptocurrencies to verify the accuracy of transactions on a
+          blockchain network.
+        </p>
+        <p class="mt-2">
+          Proof of work is a concept used in some public blockchains to
+          demonstrate that a program did the work required to propose a new
+          block for the chain. It is commonly called a consensus mechanism
+          because, eventually, network consensus is reached after there is proof
+          the work was done honestly (in this case, "honestly" means there were
+          no attempts to alter data).
+        </p>
+        <p class="mt-2">
+          Proof of work is provided by sending the information in a block
+          through a hashing algorithm, then adjusting variable fields until a
+          hexadecimal number is reached that has a lower value than the
+          network's difficulty target. This serves as proof that the program
+          expended the computational effort to "hash" the block until a solution
+          was reached.
+        </p>
+        <h2 class="text-xl mt-6">Proof of Stake (PoS)</h2>
+        <p class="mt-2">
+          Proof of Stake (PoS) is a consensus mechanism where participants,
+          called validators, are chosen to create new blocks based on the amount
+          of cryptocurrency they hold and are willing to lock up as collateral.
+          Validators earn rewards for validating transactions, which encourages
+          them to act honestly. PoS is more energy-efficient compared to Proof
+          of Work (PoW) and aims to maintain network security through economic
+          incentives.
+        </p>
 
-        <main class="p-12 pl-80 pr-80">
-            <section class="my-6">
-
-            </section>
-        </main>
-
-        <footer class="bg-gray-50 p-6 text-center text-black">
-            <p>&copy; 2024 Web3World. All rights reserved.</p>
-        </footer>
-    </body>
-
+        <h2 class="text-xl mt-6">
+          Proof of Stake (PoS) vs. Proof of Work (PoW)
+        </h2>
+        <p class="mt-2">
+          Proof of Work (PoW) relies on miners solving complex mathematical
+          puzzles to add new blocks, requiring significant energy and
+          computational power. In contrast, Proof of Stake (PoS) selects
+          validators to create new blocks based on the amount of cryptocurrency
+          they hold and stake, making it more energy-efficient. PoW emphasizes
+          computational effort for security, while PoS focuses on economic
+          incentives and ownership.
+        </p>
+      </section>
+    </main>
+    <footer class="bg-gray-50 p-6 text-center text-black">
+      <p>&copy; 2024 Web3World. All rights reserved.</p>
+    </footer>
+  </body>
 </html>
