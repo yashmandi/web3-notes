@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Tailwind CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet">
+
+        <!-- Inter Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <title>Blockchain Forking</title>
+
+        <style>
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.875rem;
+        color: #1f2937;
+    }
+</style>
+    </head>
+
+    <body>
+        <header class="bg-gray-50 p-6 text-center text-black items-center">
+            <nav>
+                <ul class="flex space-x-4 justify-between">
+                    <div>
+                        <h1 class="pl-72">
+                            <a href="index.html"
+                                class="text-black hover:underline">Web3World</a>
+                        </h1>
+                    </div>
+                    <div class="flex space-x-6 pr-72">
+                        <li>
+                            <a href="index.html"
+                                class="text-black hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="#resources"
+                                class="text-black hover:underline">Resources</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="pt-24 text-xl">Blockchain</h1>
+            <h1 class="text-black text-6xl pt-3">Blockchain Forking</h1>
+        </header>
+
+        <main class="p-12 pl-80 pr-80">
+            <section class="my-6">
+                <h2 class="text-xl mt-4 font-bold">What Is a Fork?</h2>
+                <p class="mt-2 text-gray-700">
+                    A fork occurs when a blockchain diverges into two separate
+                    paths. This can happen due to changes in the software that
+                    runs the blockchain or disagreements among network
+                    participants about the direction the blockchain should take.
+                </p>
+
+                <h3 class="text-lg mt-4 font-bold">Types of Forks:</h3>
+
+                <h4 class="text-md mt-4 font-bold">1. Soft Fork</h4>
+                <p class="mt-2 text-gray-700">
+                    <strong>Definition:</strong> A soft fork is a
+                    backward-compatible update to the blockchain's software
+                    protocol. It allows nodes that haven't updated to the new
+                    version to still interact with the network, but they might
+                    be restricted from accessing certain new features.
+                </p>
+                <p class="mt-2 text-gray-700">
+                    <strong>How It Works:</strong> In a soft fork, the new rules
+                    are a stricter version of the old rules. For example, if the
+                    old rule allowed block sizes of up to 1MB, a soft fork might
+                    reduce this limit to 0.5MB. Nodes following the new rules
+                    will accept blocks up to 0.5MB, while nodes following the
+                    old rules will accept blocks up to 1MB.
+                </p>
+                <p class="mt-2 text-gray-700">
+                    <strong>Consensus:</strong> As long as the majority of the
+                    network updates to the new version, the network remains
+                    unified, with both updated and non-updated nodes continuing
+                    to operate on the same blockchain.
+                </p>
+                <p class="mt-2 text-gray-700">
+                    <strong>Example:</strong> Bitcoin implemented a soft fork to
+                    introduce Segregated Witness (SegWit), which changed how
+                    transaction data is stored, allowing for more transactions
+                    per block without increasing the block size.
+                </p>
+
+                <h4 class="text-md mt-4 font-bold">2. Hard Fork</h4>
+                <p class="mt-2 text-gray-700">
+                    <strong>Definition:</strong> A hard fork is a significant
+                    and non-backward-compatible update to the blockchain's
+                    software protocol. This type of fork creates a permanent
+                    divergence in the blockchain, leading to two separate
+                    blockchains that no longer interact with each other.
+                </p>
+                <p class="mt-2 text-gray-700">
+                    <strong>How It Works:</strong> In a hard fork, the new rules
+                    are not compatible with the old rules. For instance, if the
+                    original blockchain allowed block sizes up to 1MB, a hard
+                    fork might increase the block size limit to 2MB. Nodes that
+                    adopt the new rules will follow the new blockchain, while
+                    nodes that continue using the old rules will remain on the
+                    original blockchain.
+                </p>
+                <p class="mt-2 text-gray-700">
+                    <strong>New Blockchain:</strong> After a hard fork, two
+                    blockchains coexist—each with its own history and rules.
+                    Often, this results in the creation of a new cryptocurrency
+                    on the forked chain.
+                </p>
+                <p class="mt-2 text-gray-700">
+                    <strong>Example:</strong> Bitcoin Cash is a well-known
+                    example of a hard fork from Bitcoin. The fork occurred due
+                    to a disagreement within the Bitcoin community about
+                    increasing the block size to handle more transactions.
+                    Bitcoin Cash was created with a larger block size, while
+                    Bitcoin continued with the original block size.
+                </p>
+
+                <h3 class="text-lg mt-4 font-bold">Why Do Forks Happen?</h3>
+
+                <ul class="list-disc ml-6 mt-2 space-y-2 text-gray-700">
+                    <li>
+                        <strong>Protocol Upgrades:</strong> Developers might
+                        want to introduce new features, improve security, or fix
+                        bugs in the blockchain protocol. These changes might
+                        require a fork to implement.
+                        <br><strong>Example:</strong> The introduction of SegWit
+                        in Bitcoin was a protocol upgrade implemented via a soft
+                        fork.
+                    </li>
+                    <li>
+                        <strong>Disagreements in the Community:</strong>
+                        Sometimes, the community of developers, miners, and
+                        users can't agree on the direction the blockchain should
+                        take. These disagreements can lead to a hard fork.
+                        <br><strong>Example:</strong> The Ethereum community
+                        experienced a hard fork after a debate over how to
+                        handle a significant hack. The original blockchain
+                        continued as Ethereum Classic, while the new blockchain,
+                        which reversed the hack, became the current Ethereum.
+                    </li>
+                    <li>
+                        <strong>Bug Fixes:</strong> If a critical bug is
+                        discovered in the blockchain's protocol, a fork might be
+                        necessary to implement a fix. Depending on the nature of
+                        the fix, this could be either a soft or hard fork.
+                        <br><strong>Example:</strong> A hard fork might be
+                        needed to fix a security vulnerability that could
+                        compromise the entire network if not addressed.
+                    </li>
+                </ul>
+
+            </section>
+        </main>
+
+        <footer class="bg-gray-50 p-6 text-center text-black">
+            <p>&copy; 2024 Web3World. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
