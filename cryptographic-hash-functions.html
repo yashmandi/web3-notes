@@ -54,13 +54,64 @@
 
         <main class="p-12 pl-80 pr-80">
             <section class="my-6 text-gray-900">
-                <h2 class="text-xl mt-2">What is Cryptographic Hash Function?</h2>
+                <h2 class="text-xl mt-2">What is Cryptographic Hash
+                    Function?</h2>
                 <p class="mt-2">A cryptographic hash function is a mathematical
                     algorithm that takes an input (or "message") and returns a
                     fixed-size string of bytes. The output, typically called a
                     hash or digest, appears random but is unique to the given
                     input.
                 </p>
+                <h2 class="text-xl mt-6">What is Cryptographic Hash
+                    Function?</h2>
+                <p class="mt-2">
+                    Hash functions are commonly used data structures in
+                    computing systems for tasks such as checking the integrity
+                    of messages and authenticating information. While they are
+                    considered cryptographically "weak" because they can be
+                    solved in polynomial time, they are not easily decipherable.
+                </p>
+                <p class="mt-2">Cryptographic hash functions add security
+                    features to typical
+                    hash functions, making it more difficult to detect the
+                    contents of a message or information about recipients and
+                    senders.
+                </p>
+                <p class="mt-4">
+                    In particular, cryptographic hash functions exhibit these
+                    three properties:
+                </p>
+                <ul class="list-disc ml-6 mt-2 space-y-2 ">
+                    <li>
+                        Collision-free: This means that no
+                        different inputs should map to the same output hash.
+                    </li>
+                    <li>
+                        Hidden: It should be difficult to guess
+                        the input value for a hash function from its output.
+                    </li>
+                    <li>
+                        Puzzle-friendly: It should be difficult
+                        to select an input that provides a predefined output.
+                        Thus, the input should be selected from a distribution
+                        that's as wide as possible.
+                    </li>
+                </ul>
+
+                <p class="mt-4">
+                    Uses in blockchain:
+                </p>
+                <ul class="list-disc ml-6 mt-2 space-y-2 ">
+                    <li> Data Integrity: Ensures data has not
+                        been altered.</li>
+                    <li> Mining: Miners solve puzzles based on
+                        hashing functions to add new blocks to the
+                        blockchain.</li>
+                    <li> Digital Signatures: Used to verify the
+                        authenticity and integrity of messages and
+                        transactions.</li>
+                </ul>
+
             </section>
         </main>
 
