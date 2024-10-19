@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Tailwind CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet">
+
+        <!-- Inter Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <title>Smart Contracts</title>
+
+        <style>
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.875rem;
+        color: #1f2937;
+    }
+</style>
+    </head>
+
+    <body>
+        <header class="bg-gray-50 p-6 text-center text-black items-center">
+            <nav>
+                <ul class="flex space-x-4 justify-between">
+                    <div>
+                        <h1 class="pl-72">
+                            <a href="index.html"
+                                class="text-black hover:underline">Web3World</a>
+                        </h1>
+                    </div>
+                    <div class="flex space-x-6 pr-72">
+                        <li>
+                            <a href="index.html"
+                                class="text-black hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="#resources"
+                                class="text-black hover:underline">Resources</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="pt-24 text-xl">Blockchain</h1>
+            <h1 class="text-black text-6xl pt-3">Smart Contracts</h1>
+        </header>
+
+        <main class="p-12 pl-80 pr-80">
+            <section class="my-6">
+                <h2 class="text-xl mt-4 font-bold">Definition</h2>
+                <p class="mt-2 text-gray-700">
+                    A smart contract is a decentralized computer program running
+                    on a blockchain network that automatically and
+                    deterministically executes agreements based on predefined
+                    conditions.
+                </p>
+
+                <p class="mt-2 text-gray-700">
+                    Introduced in their current form by the Ethereum blockchain,
+                    smart contracts are a fundamental building block for the
+                    Web3 industry; the foundation for DeFi, NFT, gaming, and
+                    other applications that have gained prominence in Web3.
+                </p>
+
+                <p class="mt-2 text-gray-700">
+                    Whether to codify arbitrary agreement terms between mutually
+                    untrusting parties, create automated and decentralized
+                    exchanges, or create both fungible and non-fungible tokens,
+                    smart contracts are how developers build decentralized
+                    applications on blockchains. Read on for a simple
+                    introduction to smart contracts and what they mean for
+                    society.
+                </p>
+
+                <h3 class="text-lg mt-4 font-bold">What Is a Smart
+                    Contract?</h3>
+                <p class="mt-2 text-gray-700">
+                    Smart contracts are computer programs that are hosted and
+                    executed on a blockchain network. Each smart contract
+                    consists of code specifying predetermined conditions that,
+                    when met, trigger outcomes. By running on a decentralized
+                    blockchain instead of a centralized server, smart contracts
+                    allow multiple parties to come to a shared result in an
+                    accurate, timely, and tamper-proof manner.
+                </p>
+
+                <p class="mt-2 text-gray-700">
+                    Smart contracts are a powerful infrastructure for automation
+                    because they are not controlled by a central administrator
+                    and are not vulnerable to single points of attack by
+                    malicious entities. When applied to multi-party digital
+                    agreements, smart contract applications can reduce
+                    counterparty risk, increase efficiency, lower costs, and
+                    provide new levels of transparency into processes.
+                </p>
+
+                <h3 class="text-lg mt-4 font-bold">Blockchains and Smart
+                    Contracts</h3>
+                <p class="mt-2 text-gray-700">
+                    Smart contract-enabled blockchains unlock the ability for
+                    developers to write arbitrary application logic on top of
+                    the decentralized consensus that blockchains natively
+                    provide. That’s why blockchains, smart contracts, and
+                    applications can be thought of in terms of a hierarchical
+                    relationship: Applications (including tokens) are created by
+                    the code from a smart contract (or multiple connected smart
+                    contracts). The actions defined in a smart contract are, in
+                    turn, executed and stored by the underlying blockchain
+                    network.
+                </p>
+
+                <h3 class="text-lg mt-4 font-bold">How Do Smart Contracts
+                    Work?</h3>
+                <p class="mt-2 text-gray-700">
+                    Smart contracts are tamper-proof programs on blockchains
+                    with the following logic: “if/when x event happens, then
+                    execute y action.” One smart contract can have multiple
+                    different conditions, and one application can have multiple
+                    different smart contracts to support an interconnected set
+                    of processes. There are also multiple smart contract
+                    languages for programming, with Ethereum’s Solidity being
+                    the most popular.
+                </p>
+
+                <p class="mt-2 text-gray-700">
+                    Any developer can create a smart contract and deploy it on a
+                    public blockchain for their own purposes, e.g., a personal
+                    yield aggregator that automatically shifts their funds to
+                    the highest-earning application. However, many smart
+                    contracts involve multiple independent parties that may or
+                    may not know one another and don’t necessarily trust one
+                    another. The smart contract defines exactly how users can
+                    interact with it, involving who can interact with the smart
+                    contract, at what times, and what inputs result in what
+                    outputs. The result is multi-party digital agreements that
+                    evolve from today’s probabilistic state to a new
+                    deterministic state where they are guaranteed to execute
+                    according to their code.
+                </p>
+
+                <h3 class="text-lg mt-4 font-bold">Do All Blockchains Have Smart
+                    Contracts?</h3>
+                <p class="mt-2 text-gray-700">
+                    Not all blockchains can run smart contracts. While
+                    blockchains and layer-2 networks including Arbitrum,
+                    Avalanche, Base, BNB Chain, and Ethereum are examples of
+                    smart-contract-compatible blockchains, blockchains like the
+                    base Bitcoin blockchain do not have native smart contract
+                    capability. The key difference between these blockchains is
+                    the ability of an underlying blockchain to execute and store
+                    arbitrary logic.
+                </p>
+
+                <h3 class="text-lg mt-4 font-bold">History of Smart
+                    Contracts</h3>
+                <p class="mt-2 text-gray-700">
+                    Smart contracts were first coined by American computer
+                    scientist Nick Szabo in 1994. In his seminal writing, he
+                    defined a smart contract as “a computerized transaction
+                    protocol that executes the terms of a contract,” aiming to
+                    “satisfy common contractual conditions, minimize exceptions
+                    both malicious and accidental, and minimize the need for
+                    trusted intermediaries.”
+                </p>
+
+                <p class="mt-2 text-gray-700">
+                    While a general notion of smart contracts could be seen in
+                    systems like vending machines, blockchains formed the
+                    foundation of smart contracts that were digital,
+                    tamper-proof, and permissionless. The introduction of the
+                    Bitcoin blockchain in 2009 supported arguably the first
+                    protocol smart contract—establishing conditions that had to
+                    be satisfied to transfer Bitcoins between users on the
+                    network.
+                </p>
+
+                <p class="mt-2 text-gray-700">
+                    The Bitcoin blockchain then evolved to offer another major
+                    type of smart contract in 2012 called a multi-signature
+                    transaction. A multisig transaction requires a defined
+                    number of people (public keys) to sign a transaction with
+                    their private keys before it’s considered valid, increasing
+                    the security of user funds.
+                </p>
+
+                <p class="mt-2 text-gray-700">
+                    A simple framework for a multisig transaction on the Bitcoin
+                    blockchain requires 2 out of 3 private keys to sign off on a
+                    transaction before it’s considered valid. Blockchains began
+                    to experiment over the next few years by adding new
+                    programmatic conditions (called operation codes or opcodes).
+                    However, the next major leap in smart contracts came with
+                    the publication of the Ethereum whitepaper by Vitalik
+                    Buterin in 2013. In 2015, Ethereum launched as a new type of
+                    blockchain for programmable smart contracts.
+                </p>
+
+                <h3 class="text-lg mt-4 font-bold">Smart Contract Examples</h3>
+                <p class="mt-2 text-gray-700">
+                    One purpose of a smart contract is to automate a specific
+                    business process between a distinct group of entities. These
+                    entities collectively agree on all the smart contract’s
+                    terms like payouts, process flow, and dispute resolutions. A
+                    simple smart contract example for global trade may have
+                    terms like:
+                </p>
+                <ul class="list-disc ml-6 mt-2 space-y-2 text-gray-700">
+                    <li><strong>Term 1:</strong> If the goods arrive on time,
+                        then execute a payment from the retailer to the supplier
+                        in full amount.</li>
+                    <li><strong>Term 2:</strong> If the goods arrive one day
+                        late, then execute a payment from the retailer to the
+                        supplier for 98% of the full amount.</li>
+                </ul>
+
+                <p class="mt-2 text-gray-700">
+                    Other smart contracts support public decentralized
+                    applications (dApps) that anyone can interact with without
+                    needing any permissions. Public dApps are often open-source,
+                    allowing anyone to inspect how they function. One example of
+                    a public dApp is a decentralized lending/borrowing market,
+                    which may have the following terms:
+                </p>
+                <ul class="list-disc ml-6 mt-2 space-y-2 text-gray-700">
+                    <li><strong>Term 1:</strong> If the user deposits collateral
+                        into the smart contract, they can receive a loan up to
+                        50% of the value of their collateral.</li>
+                    <li><strong>Term 2:</strong> If the user’s collateralization
+                        ratio drops below 200%, then the user’s collateral is
+                        automatically liquidated and transferred to the
+                        lenders.</li>
+                    <li><strong>Term 3:</strong> Lenders can deposit funds into
+                        a contract that other users can borrow from at
+                        predefined collateralization ratios, while receiving a
+                        claim to a portion of the interest rate payments.</li>
+                </ul>
+
+                <h3 class="text-lg mt-4 font-bold">Enforceability of Smart
+                    Contracts</h3>
+                <p class="mt-2 text-gray-700">
+                    Because they run on top of blockchains, smart contracts are
+                    automatically and deterministically executed exactly as
+                    programmed. In the context of enforcement, this means that
+                    no party involved in a smart contract transaction can change
+                    its outcome or renege on the terms outlined in the contract.
+                </p>
+
+                <p class="mt-2 text-gray-700">
+                    Smart contracts can eliminate counterparty risk but
+                    introduce smart contract risk, which is the risk that a
+                    smart contract’s code has an exploit or flaw. Smart
+                    contracts always run as programmed, so if the program is
+                    faulty, the contract will execute the faulty code as
+                    expected.
+                </p>
+
+                <p class="mt-2 text-gray-700">
+                    Additionally, some contracts are simply unenforceable
+                    through code. For instance, lending protocols often require
+                    overcollateralized loans because there's no way to guarantee
+                    repayment unless the full amount is already in a smart
+                    contract. In such cases, combining smart contracts with
+                    off-chain systems like credit scores and legal contracts can
+                    help mitigate counterparty risk.
+                </p>
+
+                <h3 class="text-lg mt-4 font-bold">Benefits and Limitations</h3>
+                <p class="mt-2 text-gray-700">
+                    Smart contracts offer a safer, more verifiable way of
+                    creating societal agreements involving the transfer of value
+                    and data. However, the landscape of blockchains and smart
+                    contracts is still developing, and developers face various
+                    limitations as they work to build the verifiable web.
+                </p>
+
+                <h4 class="text-md mt-4 font-bold">Smart Contract Benefits</h4>
+                <p class="mt-2 text-gray-700">
+                    Most traditional digital agreements involve parties that
+                    don’t know each other, introducing risks that either may not
+                    uphold their commitments. To resolve this, digital
+                    agreements are often executed by larger, centralized
+                    institutions like banks. While this reduces risk, it also
+                    creates a situation where these institutions exert influence
+                    over the contracts.
+                </p>
+
+                <p class="mt-2 text-gray-700">
+                    Smart contracts improve upon digital agreements by offering
+                    several advantages:
+                </p>
+                <ul class="list-disc ml-6 mt-2 space-y-2 text-gray-700">
+                    <li><strong>Security:</strong> Running on decentralized
+                        blockchain infrastructure ensures no central point of
+                        failure and no way for either party to tamper with
+                        outcomes.</li>
+                    <li><strong>Reliability:</strong> Redundant processing and
+                        verification by a decentralized network provide strong
+                        guarantees that contracts will execute on time.</li>
+                    <li><strong>Equitable:</strong> Using a decentralized
+                        network reduces the influence of profit-driven
+                        middlemen.</li>
+                    <li><strong>Efficiency:</strong> Automating backend
+                        processes means neither party has to wait for manual
+                        interventions.</li>
+                </ul>
+
+                <h3 class="text-lg mt-4 font-bold">Smart Contract Use Cases</h3>
+                <ul class="list-disc ml-6 mt-2 space-y-2 text-gray-700">
+                    <li><strong>Rights Management (Tokens):</strong> Token smart
+                        contracts create, track, and assign ownership rights to
+                        digital tokens.</li>
+                    <li><strong>Financial Products (DeFi):</strong> Applications
+                        that use smart contracts to recreate traditional
+                        financial products, such as lending and borrowing.</li>
+                    <li><strong>Gaming and NFTs:</strong> Blockchain games use
+                        smart contracts for secure in-game actions and fair
+                        distribution of digital assets.</li>
+                </ul>
+            </section>
+        </main>
+
+        <footer class="bg-gray-50 p-6 text-center text-black">
+            <p>&copy; 2024 Web3World. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
