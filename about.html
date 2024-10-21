@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Tailwind CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet" />
+
+        <!-- Inter Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet" />
+
+        <title>Web3World</title>
+
+        <style>
+            body {
+                font-family: "Inter", sans-serif;
+                font-size: 0.875rem;
+                color: #1f2937;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="bg-gray-50 p-6 text-center text-black">
+            <nav>
+                <ul class="flex space-x-4 justify-between">
+                    <div>
+                        <h1 class="pl-72">
+                            <a href="index.html"
+                                class="text-black hover:underline">Web3World</a>
+                        </h1>
+                    </div>
+                    <div class="flex space-x-6 pr-72">
+                        <li>
+                            <a href="#about"
+                                class="text-black hover:underline">About</a>
+                        </li>
+                        <li>
+                            <a href="#resources"
+                                class="text-black hover:underline">Resources</a>
+                        </li>
+                        <li>
+                            <a href="#contact"
+                                class="text-black hover:underline">Contact Us</a>
+                        </li>
+                        <li>
+                            <a href="#privacy"
+                                class="text-black hover:underline">Privacy Policy</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="text-black text-6xl pt-24">Welcome to Web3World</h1>
+            <p class="text-lg mt-4">Explore the future of decentralized technology.</p>
+        </header>
+
+        <main class="p-12 pl-80 pr-80">
+            <section id="about" class="my-6">
+                <h2 class="text-xl font-bold mb-2">About Us</h2>
+                <p class="mb-3">
+                    At Web3World, our mission is to make the complex world of
+                    blockchain and Web3 more accessible and understandable for
+                    everyone. Recognizing that navigating new technologies can
+                    be overwhelming, we are committed to providing clear,
+                    concise, and straightforward information that breaks down
+                    complex concepts into manageable pieces.
+                </p>
+                <p class="mb-3">
+                    Our focus is on empowering individuals and businesses to
+                    grasp the fundamentals of blockchain and Web3 while staying
+                    up-to-date with the latest trends and insights. A solid
+                    understanding of these systems can be a key differentiator
+                    in today's fast-paced digital landscape.
+                </p>
+                <p class="mb-3">
+                    By joining us on this journey into the future of technology, you
+                    become part of a community committed to innovation,
+                    education, and growth. Together, we can explore the many
+                    possibilities that blockchain and Web3 have to offer.
+                </p>
+            </section>
+
+            <section id="contact" class="my-6">
+                <h2 class="text-xl font-bold mb-2">Contact Us</h2>
+                <form id="contactForm" class="mt-4">
+                    <input type="text" placeholder="Your Name" class="border p-2 w-full mb-2" required />
+                    <input type="email" placeholder="Your Email" class="border p-2 w-full mb-2" required />
+                    <textarea placeholder="Your Message" class="border p-2 w-full mb-2" required></textarea>
+                    <button type="submit" class="border border-gray-800 text-black hover:bg-gray-800 hover:text-white px-3.5 py-1.5 rounded">Send</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="bg-gray-200 p-6 text-center">
+            <p>&copy; 2024 Web3World. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
