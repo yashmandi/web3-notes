@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Tailwind CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet">
+
+        <!-- Inter Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <title>Blockchain Forking</title>
+
+        <style>
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.875rem;
+        color: #1f2937;
+    }
+</style>
+    </head>
+
+    <body>
+        <header class="bg-gray-50 p-6 text-center text-black items-center">
+            <nav>
+                <ul class="flex space-x-4 justify-between">
+                    <div>
+                        <h1 class="pl-72">
+                            <a href="index.html"
+                                class="text-black hover:underline">Web3World</a>
+                        </h1>
+                    </div>
+                    <div class="flex space-x-6 pr-72">
+                        <li>
+                            <a href="index.html"
+                                class="text-black hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="#resources"
+                                class="text-black hover:underline">Resources</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="pt-24 text-xl">Blockchain</h1>
+            <h1 class="text-black text-6xl pt-3">Blockchain Forking</h1>
+        </header>
+
+        <main class="p-12 pl-80 pr-80">
+            <section class="my-6">
+                <h2>Oracles</h2>
+                <p>Blockchain oracles are tools that connect blockchains with
+                    the outside world.
+                    Blockchains and smart contracts usually operate within their
+                    own ecosystem and can't access real-world data directly.
+                    This limitation means they can only work with the data that
+                    already exists on the blockchain. However, many smart
+                    contracts need real-world information, like the current
+                    price of an asset, weather conditions, or sports scores, to
+                    execute properly.</p>
+                <p>This is where oracles come in. Oracles act as bridges that
+                    fetch data from the outside world and deliver it to the
+                    blockchain, enabling smart contracts to use that
+                    information. For example, if a smart contract is set to
+                    execute a trade when the price of Bitcoin hits a certain
+                    value, an oracle would provide that price data from an
+                    external source.</p>
+                <p>Oracles can work in different ways, and there are different
+                    types, like software oracles, hardware oracles, and even
+                    decentralized oracles, which gather data from multiple
+                    sources to ensure accuracy and reliability.</p>
+                <p>In summary, oracles are essential for making blockchains more
+                    useful and versatile by allowing them to interact with the
+                    real world.</p>
+
+                <h2>Hybrid Smart Contracts</h2>
+                <p>Hybrid smart contracts combine on-chain code, which runs on a
+                    blockchain, with off-chain data and computation. This
+                    integration allows them to execute more complex and
+                    real-world-relevant tasks than traditional smart contracts,
+                    which operate solely within the blockchain's ecosystem.</p>
+                <h3>Here’s how they work:</h3>
+                <ol>
+                    <li><strong>On-Chain Component:</strong> The core logic of a
+                        hybrid smart contract is stored and executed on the
+                        blockchain, ensuring security, transparency, and
+                        immutability. This part of the contract deals with
+                        actions like transferring tokens or enforcing rules
+                        within the blockchain environment.</li>
+                    <li><strong>Off-Chain Component:</strong> Hybrid smart
+                        contracts rely on off-chain data and computation to
+                        gather real-world information or perform tasks that are
+                        too complex or costly to be done on-chain. This is where
+                        blockchain oracles come in. Oracles provide the
+                        necessary data from external sources, such as market
+                        prices, weather data, or event outcomes, and send it to
+                        the blockchain where the smart contract can use it.</li>
+                    <li><strong>Interaction Between Components:</strong> The
+                        on-chain and off-chain components communicate with each
+                        other through oracles. This interaction allows the smart
+                        contract to trigger actions based on real-world events,
+                        making it "hybrid" by combining the benefits of
+                        blockchain (security and transparency) with the
+                        flexibility and power of external data and
+                        computation.</li>
+                </ol>
+                <h3>Example Use Case:</h3>
+                <p>Imagine a decentralized insurance contract that pays out
+                    claims based on weather conditions. The on-chain smart
+                    contract would handle the insurance policy and payments,
+                    while an oracle would provide weather data from a trusted
+                    source. If the oracle reports that certain conditions are
+                    met (like a flood), the smart contract automatically
+                    triggers the payout.</p>
+
+                <h3>Why They Matter:</h3>
+                <p>Hybrid smart contracts are crucial for expanding the
+                    potential applications of blockchain technology. They enable
+                    the development of more sophisticated decentralized
+                    applications (dApps) that can interact with the real world,
+                    making blockchain solutions more practical and versatile in
+                    various industries, including finance, supply chain
+                    management, insurance, and more.</p>
+            </section>
+        </main>
+
+        <footer class="bg-gray-50 p-6 text-center text-black">
+            <p>&copy; 2024 Web3World. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
