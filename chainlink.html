@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Tailwind CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet">
+
+        <!-- Inter Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet">
+
+        <title>Blockchain Forking</title>
+
+        <style>
+    body {
+        font-family: 'Inter', sans-serif;
+        font-size: 0.875rem;
+        color: #1f2937;
+    }
+</style>
+    </head>
+
+    <body>
+        <header class="bg-gray-50 p-6 text-center text-black items-center">
+            <nav>
+                <ul class="flex space-x-4 justify-between">
+                    <div>
+                        <h1 class="pl-72">
+                            <a href="index.html"
+                                class="text-black hover:underline">Web3World</a>
+                        </h1>
+                    </div>
+                    <div class="flex space-x-6 pr-72">
+                        <li>
+                            <a href="index.html"
+                                class="text-black hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="#resources"
+                                class="text-black hover:underline">Resources</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="pt-24 text-xl">Blockchain</h1>
+            <h1 class="text-black text-6xl pt-3">Blockchain Forking</h1>
+        </header>
+        <main class="p-12 pl-80 pr-80">
+            <section class="my-6">
+                <h2>Chainlink</h2>
+                <p>Chainlink is a decentralized oracle network that connects
+                    blockchain-based smart contracts with real-world data,
+                    services, and events.</p>
+
+                <h3>Key Concepts:</h3>
+                <ol>
+                    <li><strong>Oracles:</strong> Oracles are entities that
+                        provide data from the outside world to blockchain smart
+                        contracts. Since blockchains cannot directly access
+                        external data, they rely on oracles to fetch and verify
+                        this information.</li>
+                    <li><strong>Decentralized Oracles:</strong> Unlike
+                        centralized oracles, which rely on a single source of
+                        truth, Chainlink uses a network of independent oracles
+                        to gather data. This decentralized approach increases
+                        reliability and trustworthiness, as it reduces the risk
+                        of tampering or manipulation by any single oracle.</li>
+                    <li><strong>Chainlink's Role:</strong> Chainlink serves as a
+                        bridge between blockchain smart contracts and off-chain
+                        resources like data feeds, APIs, and payment systems.
+                        For example, a smart contract on Ethereum might need the
+                        current price of Bitcoin to execute a trade. Chainlink
+                        oracles can provide that price data, enabling the
+                        contract to function correctly.</li>
+                    <li><strong>How It Works:</strong>
+                        <ul>
+                            <li><strong>Request for Data:</strong> A smart
+                                contract requests data from Chainlink.</li>
+                            <li><strong>Oracle Selection:</strong> Chainlink
+                                selects multiple oracles to fulfill the
+                                request.</li>
+                            <li><strong>Data Retrieval:</strong> The selected
+                                oracles gather the required data from various
+                                sources.</li>
+                            <li><strong>Aggregation:</strong> Chainlink
+                                aggregates the data from all oracles to ensure
+                                accuracy and then sends it back to the smart
+                                contract.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Token (LINK):</strong> Chainlink has its own
+                        cryptocurrency called LINK, which is used to pay for
+                        services on the network. Smart contracts pay oracles in
+                        LINK tokens for providing data, and oracle operators
+                        earn LINK as a reward for their services.</li>
+                </ol>
+
+                <h3>Importance:</h3>
+                <p>Chainlink is crucial for enabling smart contracts to interact
+                    with the real world, making blockchain technology more
+                    practical and versatile. It’s used in various applications,
+                    including decentralized finance (DeFi), insurance, gaming,
+                    and more, where reliable and accurate data from outside the
+                    blockchain is necessary.</p>
+
+                <h3>Example Use Case:</h3>
+                <p>Imagine a decentralized finance (DeFi) application that
+                    offers loans. The interest rate on these loans might be
+                    based on the real-world price of a commodity like gold.
+                    Chainlink can provide the current gold price to the smart
+                    contract, which then uses this information to calculate the
+                    interest rate. Without Chainlink, the smart contract would
+                    have no way to access this crucial off-chain data.</p>
+            </section>
+        </main>
+
+        <footer class="bg-gray-50 p-6 text-center text-black">
+            <p>&copy; 2024 Web3World. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
