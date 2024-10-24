@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Tailwind CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet" />
+
+        <!-- Inter Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet" />
+
+        <title>Keccak</title>
+
+        <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.875rem;
+        color: #1f2937;
+      }
+    </style>
+    </head>
+
+    <body>
+        <header class="bg-gray-50 p-6 text-center text-black items-center">
+            <nav>
+                <ul class="flex space-x-4 justify-between">
+                    <div>
+                        <h1 class="pl-72">
+                            <a href="index.html"
+                                class="text-black hover:underline">Web3World</a>
+                        </h1>
+                    </div>
+                    <div class="flex space-x-6 pr-72">
+                        <li>
+                            <a href="index.html"
+                                class="text-black hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="resources.html"
+                                class="text-black hover:underline">Resources</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="pt-24 text-xl">Ethereum and EVM Concepts</h1>
+            <h1 class="text-black text-6xl pt-3">Keccak</h1>
+        </header>
+
+        <main class="p-12 pl-80 pr-80">
+            <section class="my-6">
+                <div class="max-w-4xl mx-auto p-6">
+                    <h2 class="text-xl font-bold mb-4"> What is Keccak-256</h2>
+
+                    <p class=" mb-4">
+                        Keccak-256 is a cryptographic hash function that
+                        produces a fixed 256-bit output, similar to SHA-256, but
+                        it follows a different internal process. It's the basis
+                        of the SHA-3 standard (Secure Hash Algorithm 3) and is
+                        widely used in blockchain platforms like Ethereum, where
+                        it's called keccak256.
+                    </p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">1. Overview</h3>
+                    <p class=" mb-4">
+                        Keccak-256 is a member of the Keccak family of
+                        cryptographic hash functions, which won the NIST
+                        (National Institute of Standards and Technology)
+                        competition to become the SHA-3 standard in 2015. It
+                        takes an arbitrary amount of input data and generates a
+                        256-bit (32-byte) fixed-length output, known as a hash
+                        or digest. The key property of Keccak-256, like other
+                        hash functions, is that even the slightest change in
+                        input will produce a vastly different hash output
+                        (avalanche effect), making it useful for data integrity
+                        and security.
+                    </p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">2. Properties of
+                        Keccak-256</h3>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Fixed-Length Output:</strong> Regardless of
+                            the size of the input, Keccak-256 always produces a
+                            256-bit (32-byte) hash.</li>
+                        <li><strong>Pre-image Resistance:</strong> It is
+                            computationally infeasible to reverse the process
+                            and retrieve the original input from the hash.</li>
+                        <li><strong>Collision Resistance:</strong> Finding two
+                            different inputs that produce the same hash
+                            (collision) is highly improbable due to the large
+                            output space.</li>
+                        <li><strong>Avalanche Effect:</strong> A tiny change in
+                            the input (even a single bit) drastically changes
+                            the output hash.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">3. Keccak-256 vs
+                        SHA-256</h3>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Different Standards:</strong> Keccak-256 is
+                            the basis of SHA-3, while SHA-256 is part of
+                            SHA-2.</li>
+                        <li><strong>Internal Mechanisms:</strong> Keccak-256
+                            uses a sponge construction (absorption and
+                            squeezing), while SHA-256 follows the Merkle-Damgård
+                            construction (based on iterative hashing).</li>
+                        <li><strong>Block Size:</strong> Keccak-256 uses larger
+                            internal states (1600 bits) compared to SHA-256’s
+                            smaller internal state (512 bits).</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">4. Keccak-256 in
+                        Ethereum</h3>
+                    <p class=" mb-4">
+                        In the Ethereum blockchain, keccak256 is the default
+                        hash function. It’s used for multiple purposes,
+                        including:
+                    </p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>Hashing transactions and blocks.</li>
+                        <li>Generating unique addresses.</li>
+                        <li>Storing data efficiently.</li>
+                    </ul>
+                    <p class=" mb-4">
+                        Smart contracts in Ethereum use the keccak256 function
+                        to verify integrity, create signatures, and much more.
+                    </p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Summary</h3>
+                    <p class=" mb-4">
+                        Keccak-256 is a powerful cryptographic hash function
+                        that plays a major role in Ethereum and other blockchain
+                        technologies. It operates using a sponge construction
+                        that absorbs the input data, performs several
+                        permutations, and squeezes out a 256-bit output. It’s
+                        different from SHA-256 in terms of internal workings and
+                        design but is just as secure. Ethereum developers often
+                        rely on keccak256 for creating hashes and ensuring data
+                        integrity within the blockchain.
+                    </p>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="bg-gray-50 p-6 text-center text-black">
+            <p>&copy; 2024 Web3World. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
