@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Tailwind CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet" />
+
+        <!-- Inter Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet" />
+
+        <title>Gas and Transactions</title>
+
+        <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.875rem;
+        color: #1f2937;
+      }
+    </style>
+    </head>
+
+    <body>
+        <header class="bg-gray-50 p-6 text-center text-black items-center">
+            <nav>
+                <ul class="flex space-x-4 justify-between">
+                    <div>
+                        <h1 class="pl-72">
+                            <a href="index.html"
+                                class="text-black hover:underline">Web3World</a>
+                        </h1>
+                    </div>
+                    <div class="flex space-x-6 pr-72">
+                        <li>
+                            <a href="index.html"
+                                class="text-black hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="resources.html"
+                                class="text-black hover:underline">Resources</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="pt-24 text-xl">Ethereum and EVM Concepts</h1>
+            <h1 class="text-black text-6xl pt-3">Gas and Transactions</h1>
+        </header>
+
+        <main class="p-12 pl-80 pr-80">
+            <section class="my-6">
+                <ol class="list-decimal space-y-6 ">
+                    <li>
+                        <h2 class="text-xl font-semibold mb-2">What is
+                            Gas?</h2>
+                        <p class=" mb-4">
+                            Gas is a fee required to perform transactions or
+                            execute smart contracts on the Ethereum network. It
+                            ensures fair allocation of resources and prevents
+                            spam or abuse of the network. The cost of any
+                            operation, like sending tokens or executing smart
+                            contracts, is measured in gas units.
+                        </p>
+                        <ul class="list-disc pl-6">
+                            <li>Gas is priced in gwei (1 gwei = 0.000000001
+                                ETH).</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h2 class="text-xl font-semibold mb-2">Gas Price and
+                            Gas Limit</h2>
+                        <ul class="pl-6 space-y-3">
+                            <li><span class="font-bold">Gas Price:</span> The
+                                price per unit of gas you're willing to pay.
+                                Higher gas prices incentivize miners to
+                                prioritize your transaction.</li>
+                            <li><span class="font-bold">Gas Limit:</span> The
+                                maximum amount of gas you are willing to spend.
+                                Simpler transactions, like sending ETH, have a
+                                standard limit (e.g., 21,000 gas units), while
+                                complex smart contracts may require more
+                                gas.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h2 class="text-xl font-semibold mb-2">Why Gas is
+                            Needed in Transactions</h2>
+                        <p class=" mb-4">
+                            Miners need computational resources to validate and
+                            include transactions in a block. Gas fees ensure
+                            miners are compensated for their work, maintaining
+                            the Ethereum network.
+                        </p>
+                        <p class="mb-2">For example:</p>
+                        <ul class="list-disc pl-6">
+                            <li><span class="font-semibold">Simple transaction
+                                    (sending ETH):</span> Requires about 21,000
+                                gas units.</li>
+                            <li><span class="font-semibold">Smart contract
+                                    execution:</span> Requires more gas due to
+                                complexity.</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <h2 class="text-xl font-semibold mb-2">How a
+                            Transaction Works</h2>
+                        <ol class="list-decimal pl-6 space-y-3">
+                            <li><span class="font-semibold">Create a
+                                    Transaction:</span> Set the recipient,
+                                amount, gas price, and gas limit.</li>
+                            <li><span class="font-semibold">Broadcasting:</span>
+                                The transaction is sent to the network and
+                                picked up by miners based on your gas
+                                price.</li>
+                            <li><span class="font-semibold">Mining:</span>
+                                Miners validate the transaction and include it
+                                in a block.</li>
+                            <li><span class="font-semibold">Gas Used:</span> The
+                                amount of gas used depends on transaction
+                                complexity. If the gas limit is too low, the
+                                transaction will fail, and the gas is still
+                                consumed.</li>
+                        </ol>
+                    </li>
+
+                    <li>
+                        <h2 class="text-xl font-semibold mb-2">Gas Fees vs.
+                            Transaction Fees</h2>
+                        <p class=" mb-4">
+                            The total cost of a transaction in Ether is
+                            calculated as:
+                        </p>
+                        <div class="bg-gray-100 p-4 rounded-md shadow mb-4">
+                            <p class="font-mono">Transaction Fee = Gas Used ×
+                                Gas Price</p>
+                        </div>
+                        <p class="mb-4">
+                            Example: If a transaction uses 21,000 gas and the
+                            gas price is 100 gwei, the total fee would be:
+                        </p>
+                        <div class="bg-gray-100 p-4 rounded-md shadow">
+                            <p class="font-mono">Fee = 21,000 × 100 = 2,100,000
+                                gwei = 0.0021 ETH</p>
+                        </div>
+                    </li>
+                </ol>
+
+                <section class="mt-8">
+                    <h2 class="text-xl font-bold mb-4">Some Questions on Gas &
+                        Transactions</h2>
+                    <ol class="list-decimal pl-6 space-y-6">
+                        <li>
+                            <h3 class="text-xl font-semibold mb-2">Who sets the
+                                gas price and gas limit?</h3>
+                            <p class=" mb-2">
+                                <strong>Gas Price:</strong> The user initiating
+                                the transaction sets the gas price, not the
+                                smart contract developer.
+                            </p>
+                            <p class="">
+                                <strong>Gas Limit:</strong> The user sets the
+                                gas limit, which varies based on the complexity
+                                of the transaction. Developers often estimate
+                                gas requirements for their contracts, but the
+                                user decides the final limit.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3 class="text-xl font-semibold mb-2">Who pays the
+                                gas price after making a transaction?</h3>
+                            <p class=" mb-2">
+                                <strong>Who Pays:</strong> The user initiating
+                                the transaction pays the gas fee. Unused gas is
+                                refunded, but used gas is non-refundable.
+                            </p>
+                            <p class="">
+                                <strong>Who Receives:</strong> The gas fee is
+                                awarded to miners (in Proof of Work) or
+                                validators (in Proof of Stake) as compensation
+                                for processing the transaction.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3 class="text-xl font-semibold mb-2">Do other
+                                cryptos have the concept of gas?</h3>
+                            <p class=" mb-2">
+                                <strong>Bitcoin:</strong> Bitcoin doesn’t use
+                                gas but has transaction fees based on
+                                transaction size.
+                            </p>
+                            <p class=" mb-2">
+                                <strong>Solana:</strong> Solana has transaction
+                                fees similar to gas, but they are much lower due
+                                to the network’s scalability.
+                            </p>
+                        </li>
+
+                        <li>
+                            <h3 class="text-xl font-semibold mb-2">How is the
+                                gas fee set, calculated, paid, and used?</h3>
+                            <ol class="list-decimal pl-6 space-y-2">
+                                <li><strong>Smart Contract Creation:</strong>
+                                    Developers write the smart contract but
+                                    don’t control gas fees.</li>
+                                <li><strong>User Initiates Transaction:</strong>
+                                    Users set the gas price and limit.</li>
+                                <li><strong>Transaction Broadcast:</strong> The
+                                    transaction is sent to the network and
+                                    picked up by miners/validators.</li>
+                                <li><strong>Gas Used:</strong> Gas is consumed
+                                    based on the operations in the smart
+                                    contract.</li>
+                                <li><strong>Miners/Validators Paid:</strong> The
+                                    gas fee is paid to miners/validators for
+                                    processing the transaction.</li>
+                                <li><strong>Unused Gas Refunded:</strong> Any
+                                    unused gas is refunded to the user.</li>
+                            </ol>
+                        </li>
+                    </ol>
+                </section>
+            </section>
+        </main>
+
+        <footer class="bg-gray-50 p-6 text-center text-black">
+            <p>&copy; 2024 Web3World. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
