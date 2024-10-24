@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Tailwind CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet" />
+
+        <!-- Inter Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet" />
+
+        <title>Hashing</title>
+
+        <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.875rem;
+        color: #1f2937;
+      }
+    </style>
+    </head>
+
+    <body>
+        <header class="bg-gray-50 p-6 text-center text-black items-center">
+            <nav>
+                <ul class="flex space-x-4 justify-between">
+                    <div>
+                        <h1 class="pl-72">
+                            <a href="index.html"
+                                class="text-black hover:underline">Web3World</a>
+                        </h1>
+                    </div>
+                    <div class="flex space-x-6 pr-72">
+                        <li>
+                            <a href="index.html"
+                                class="text-black hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="resources.html"
+                                class="text-black hover:underline">Resources</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="pt-24 text-xl">Tools and Development</h1>
+            <h1 class="text-black text-6xl pt-3">Hashing</h1>
+        </header>
+
+        <main class="p-12 pl-80 pr-80">
+            <section class="my-6">
+                <h1 class="text-xl font-bold mb-2">What is Hashing?</h1>
+                <p class="mb-4">
+                    Hashing is the process of converting data of any size into a
+                    fixed-size string of characters, which usually looks like a
+                    sequence of random letters and numbers. The output of this
+                    process is called a hash.
+                </p>
+                <h2 class="text-xl font-semibold mb-2">How Hashing Works:</h2>
+                <ol class="list-decimal list-inside mb-4">
+                    <li><strong>Input Data:</strong> You provide any data (like
+                        a file, password, or transaction) as input.</li>
+                    <li><strong>Hash Function:</strong> A hash function (e.g.,
+                        SHA-256) is applied to the input. The hash function
+                        takes the input and processes it through a set of
+                        mathematical rules.</li>
+                    <li><strong>Fixed-Size Output:</strong> No matter how large
+                        or small the input is, the hash function will always
+                        produce a fixed-size output (called the "hash"). For
+                        example, with the SHA-256 algorithm, the output is
+                        always a 256-bit string.</li>
+                    <li><strong>Unique Output:</strong> Even a tiny change in
+                        the input data will result in a completely different
+                        hash. For example, changing a single letter in a file
+                        will produce a totally different hash.</li>
+                    <li><strong>One-Way:</strong> Hashing is a one-way function,
+                        meaning once the data is hashed, it’s nearly impossible
+                        to reverse-engineer the original input from the hash.
+                        This makes it useful for securing sensitive data like
+                        passwords.</li>
+                </ol>
+                <h2 class="text-xl font-semibold mb-2">Uses of Hashing:</h2>
+                <ul class="list-disc list-inside mb-4">
+                    <li><strong>Data Integrity:</strong> Hashes are used to
+                        ensure data has not been altered. If two pieces of data
+                        have the same hash, it’s highly likely that they are
+                        identical.</li>
+                    <li><strong>Cryptocurrency:</strong> Hashing is fundamental
+                        to blockchain technology. In Bitcoin, miners solve
+                        cryptographic puzzles by hashing large amounts of data
+                        to validate transactions and secure the network.</li>
+                    <li><strong>Passwords:</strong> Instead of storing
+                        passwords, websites store hashes of passwords. When you
+                        log in, your input is hashed and compared with the
+                        stored hash to check if it matches.</li>
+                </ul>
+                <h2 class="text-xl font-semibold mb-2">Example:</h2>
+                <p class="mb-2"><strong>Input:</strong> "hello"</p>
+                <p><strong>Hash Output:</strong>
+                    2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
+                    (using SHA-256)</p>
+                <h2 class="text-xl font-semibold mb-2">Summary:</h2>
+                <p>
+                    Hashing transforms data into a fixed-size, unique, and
+                    one-way output, making it essential for ensuring data
+                    integrity and security in various applications, including
+                    blockchain, file verification, and password storage.
+                </p>
+            </section>
+        </main>
+
+        <footer class="bg-gray-50 p-6 text-center text-black">
+            <p>&copy; 2024 Web3World. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
