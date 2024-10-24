@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Tailwind CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet" />
+
+        <!-- Inter Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet" />
+
+        <title>SHA-256</title>
+
+        <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.875rem;
+        color: #1f2937;
+      }
+    </style>
+    </head>
+
+    <body>
+        <header class="bg-gray-50 p-6 text-center text-black items-center">
+            <nav>
+                <ul class="flex space-x-4 justify-between">
+                    <div>
+                        <h1 class="pl-72">
+                            <a href="index.html"
+                                class="text-black hover:underline">Web3World</a>
+                        </h1>
+                    </div>
+                    <div class="flex space-x-6 pr-72">
+                        <li>
+                            <a href="index.html"
+                                class="text-black hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="resources.html"
+                                class="text-black hover:underline">Resources</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="pt-24 text-xl">Ethereum and EVM Concepts</h1>
+            <h1 class="text-black text-6xl pt-3">SHA-256</h1>
+        </header>
+
+        <main class="p-12 pl-80 pr-80">
+            <section class="my-6">
+                <div class="max-w-4xl mx-auto p-6">
+                    <h2 class="text-xl font-bold mb-4">What is SHA-256?</h2>
+
+                    <p class=" mb-4">
+                        SHA-256 (Secure Hash Algorithm 256-bit) is a
+                        cryptographic hash function that generates a fixed-size
+                        256-bit (32-byte) hash value for any given input, no
+                        matter the size. It is widely used in blockchain,
+                        digital signatures, and various security protocols.
+                        Here's how SHA-256 works under the hood, broken down
+                        into simple steps:
+                    </p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">1. Message
+                        Preprocessing</h3>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Input Data:</strong> SHA-256 takes an input
+                            of any length (text, file, etc.).</li>
+                        <li><strong>Padding:</strong> The input message is
+                            padded to ensure its length is a multiple of 512
+                            bits. Padding is done by adding a '1' bit followed
+                            by enough '0' bits, and finally, the length of the
+                            original message in 64-bit binary is appended. <br>
+                            <strong>Example:</strong> If the input is 448 bits,
+                            SHA-256 adds padding to make it 512 bits, which is
+                            the required block size.</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">2. Message
+                        Parsing</h3>
+                    <p class=" mb-4">
+                        The padded message is then divided into 512-bit blocks.
+                        If the message is larger than 512 bits, it is split into
+                        multiple blocks. Each block is processed one at a time.
+                    </p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">3. Initializing
+                        Hash Values</h3>
+                    <p class=" mb-4">
+                        SHA-256 uses a set of 8 constant initial hash values (H0
+                        to H7). These are fixed hexadecimal numbers that are
+                        defined as part of the algorithm:
+                    </p>
+                    <ul class="list-disc list-inside mb-4">
+                        <li>H0 = 6a09e667</li>
+                        <li>H1 = bb67ae85</li>
+                        <li>H2 = 3c6ef372</li>
+                        <li>H3 = a54ff53a</li>
+                        <li>H4 = 510e527f</li>
+                        <li>H5 = 9b05688c</li>
+                        <li>H6 = 1f83d9ab</li>
+                        <li>H7 = 5be0cd19</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">4. Processing
+                        the Message Block-by-Block</h3>
+                    <p class=" mb-4">
+                        Each 512-bit block is processed through 64 iterations
+                        (or rounds) using mathematical functions and bitwise
+                        operations. A message schedule of 64 words (32 bits
+                        each) is created from the 512-bit block. The first 16
+                        words are taken directly from the block, and the
+                        remaining 48 words are derived from the previous words
+                        using bitwise operations like shifts and XORs.
+                    </p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">5. Compression
+                        Function</h3>
+                    <p class=" mb-4">
+                        The heart of SHA-256 is the compression function, which
+                        involves mixing the message schedule and the hash
+                        values. In each of the 64 rounds, SHA-256 uses constants
+                        (called K0, K1, ..., K63) and applies bitwise logical
+                        operations (such as AND, OR, XOR) and rotations on the
+                        working variables. The current hash values are updated
+                        based on this process, and the results are fed back into
+                        the system for the next round.
+                    </p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">6. Update the
+                        Hash Values</h3>
+                    <p class=" mb-4">
+                        After processing all 64 rounds for a 512-bit block, the
+                        algorithm updates the initial hash values (H0 to H7) by
+                        adding the outputs from the compression function to the
+                        previous values of H0 to H7. This "chaining" process
+                        continues for each 512-bit block of the message.
+                    </p>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">7. Final Hash
+                        Value</h3>
+                    <p class=" mb-4">
+                        After all blocks have been processed, the final 256-bit
+                        hash is produced by concatenating the updated H0 to H7
+                        values. This final value is the hash digest of the input
+                        message.
+                    </p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">Example
+                        (Simplified Overview):</h4>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Input message:</strong> "hello"</li>
+                        <li>Convert "hello" into binary and apply padding.</li>
+                        <li>Divide the binary message into 512-bit blocks.</li>
+                        <li>Process each block with 64 rounds of mixing,
+                            shifting, and rotating.</li>
+                        <li>At the end, the initial hash values (H0-H7) are
+                            updated to form the final 256-bit hash value: <br>
+                            <code
+                                class="bg-gray-100 p-1">2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824</code></li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Key
+                        Components:</h3>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Chaining:</strong> Each block influences the
+                            final hash, creating a dependency between the
+                            blocks.</li>
+                        <li><strong>Bitwise Operations:</strong> Core operations
+                            like XOR, rotations, and shifts ensure
+                            non-reversibility and randomness.</li>
+                        <li><strong>Fixed Output:</strong> Regardless of input
+                            size, the output is always 256 bits (32 bytes).</li>
+                    </ul>
+
+                    <h3 class="text-lg font-semibold mt-4 mb-2">Summary:</h3>
+                    <p class=" mb-4">
+                        SHA-256 takes any input, processes it through multiple
+                        rounds of bitwise operations, and outputs a 256-bit
+                        hash. This makes it suitable for verifying data
+                        integrity and securing sensitive information like
+                        passwords and blockchain transactions. Its cryptographic
+                        strength comes from the complexity of the operations and
+                        the difficulty in reversing the process.
+                    </p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="bg-gray-50 p-6 text-center text-black">
+            <p>&copy; 2024 Web3World. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
