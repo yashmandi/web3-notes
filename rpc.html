@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <!-- Tailwind CSS -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+            rel="stylesheet" />
+
+        <!-- Inter Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+            rel="stylesheet" />
+
+        <title>RPC</title>
+
+        <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.875rem;
+        color: #1f2937;
+      }
+    </style>
+    </head>
+
+    <body>
+        <header class="bg-gray-50 p-6 text-center text-black items-center">
+            <nav>
+                <ul class="flex space-x-4 justify-between">
+                    <div>
+                        <h1 class="pl-72">
+                            <a href="index.html"
+                                class="text-black hover:underline">Web3World</a>
+                        </h1>
+                    </div>
+                    <div class="flex space-x-6 pr-72">
+                        <li>
+                            <a href="index.html"
+                                class="text-black hover:underline">Home</a>
+                        </li>
+                        <li>
+                            <a href="resources.html"
+                                class="text-black hover:underline">Resources</a>
+                        </li>
+                    </div>
+                </ul>
+            </nav>
+            <h1 class="pt-24 text-xl">Ethereum and EVM Concepts</h1>
+            <h1 class="text-black text-6xl pt-3">Remote Procedure Call
+                (RPC)</h1>
+        </header>
+
+        <main class="p-12 pl-80 pr-80">
+            <section class="my-6">
+                <div class="p-6">
+                    <p class=" mb-4">
+                        RPC stands for Remote Procedure Call. It’s a method used
+                        in programming to request a service or information from
+                        another computer or server, usually over the internet.
+                        Instead of running a function or process locally (on
+                        your own machine), you make a request to another machine
+                        to do it for you and send back the result.
+                    </p>
+                    <p class=" mb-4">
+                        In simpler terms, imagine you’re sending a message to a
+                        server asking it to perform a task and return the
+                        result, without you needing to understand how it’s done
+                        behind the scenes.
+                    </p>
+
+                    <h3 class="text-xl font-semibold mt-6 mb-2">Role of RPC in
+                        Crypto:</h3>
+                    <p class=" mb-4">
+                        In the world of cryptocurrency and blockchain, RPCs are
+                        crucial for communication between decentralized
+                        applications (dApps), wallets, or other blockchain tools
+                        and the blockchain itself. Here's how they work and why
+                        they are important:
+                    </p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">1. Interacting
+                        with Blockchain Nodes</h4>
+                    <p class=" mb-4">
+                        Blockchains are essentially distributed networks of
+                        nodes (computers). These nodes store the entire history
+                        of the blockchain, validate transactions, and update the
+                        network. To interact with the blockchain (like sending
+                        transactions, querying data, or deploying smart
+                        contracts), you need to communicate with one of these
+                        nodes.
+                        <br />
+                        RPCs act as the bridge between your application and the
+                        blockchain. For instance, if you want to check your
+                        cryptocurrency balance or send some crypto to someone,
+                        your wallet or dApp will use an RPC to send this request
+                        to a node, which will process it and return the
+                        necessary data or complete the transaction.
+                    </p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">2. Retrieving
+                        Blockchain Data</h4>
+                    <p class=" mb-4">
+                        Using an RPC, you can request data such as transaction
+                        history, wallet balances, block information, or smart
+                        contract details from the blockchain. For example, if
+                        you open your crypto wallet and it shows how much
+                        Bitcoin or Ether you have, it likely made an RPC call to
+                        the blockchain to retrieve your account balance.
+                        <br />
+                        The blockchain itself doesn't send you notifications or
+                        updates automatically. It’s the RPC call that fetches
+                        the required information every time your wallet or app
+                        needs it.
+                    </p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">3. Sending
+                        Transactions</h4>
+                    <p class=" mb-4">
+                        When you send cryptocurrency to another person or
+                        interact with a smart contract, this is essentially a
+                        transaction. For this to be processed on the blockchain,
+                        your wallet or dApp sends an RPC request to a node. The
+                        node then broadcasts your transaction to the network,
+                        where it will be validated and included in the next
+                        block.
+                        <br />
+                        Without RPCs, there wouldn’t be an easy way to submit
+                        transactions to the blockchain from your device.
+                    </p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">4. Smart
+                        Contract Interactions</h4>
+                    <p class=" mb-4">
+                        Smart contracts are automated programs that run on the
+                        blockchain. When dApps or users want to trigger a smart
+                        contract function (like trading tokens on a
+                        decentralized exchange), they make an RPC call to the
+                        blockchain. The node processes the request, interacts
+                        with the smart contract, and sends back the results.
+                        <br />
+                        For example, if you’re using a decentralized finance
+                        (DeFi) app to swap tokens, your request goes through an
+                        RPC call to interact with the smart contract that
+                        handles the swap.
+                    </p>
+
+                    <h3 class="text-xl font-semibold mt-6 mb-2">Why RPCs Matter
+                        in Crypto:</h3>
+                    <ul class="list-disc list-inside mb-4">
+                        <li><strong>Accessibility:</strong> They make it easier
+                            for developers and users to interact with the
+                            blockchain without running a full node themselves.
+                            Full nodes are heavy and require lots of computing
+                            power and storage, so RPCs allow users to connect to
+                            the blockchain without this burden.</li>
+                        <li><strong>Efficiency:</strong> RPCs provide a faster
+                            and more efficient way to access blockchain data and
+                            send transactions.</li>
+                        <li><strong>Security:</strong> By connecting to trusted
+                            nodes via RPC, users and dApps can securely interact
+                            with the blockchain without having to trust
+                            third-party applications.</li>
+                    </ul>
+
+                    <h3 class="text-xl font-semibold mt-6 mb-2">Connecting to
+                        RPCs from Wallets</h3>
+                    <p class=" mb-4">
+                        When using a cryptocurrency wallet, whether it's a
+                        software wallet like MetaMask or a hardware wallet like
+                        Ledger, your wallet needs to communicate with the
+                        blockchain network to perform tasks such as sending
+                        transactions, checking balances, or interacting with
+                        smart contracts. This communication happens through
+                        Remote Procedure Calls (RPCs), which act as the bridge
+                        between your wallet and the blockchain nodes.
+                    </p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">1. What is an
+                        RPC (Remote Procedure Call)?</h4>
+                    <p class=" mb-4">
+                        RPC is a communication protocol that allows your wallet
+                        to send requests to a blockchain node (a server running
+                        a full copy of the blockchain) and receive responses. In
+                        the context of blockchain, RPCs are used to:
+                        <ul class="list-disc list-inside">
+                            <li>Query data from the blockchain (e.g., balance of
+                                an address).</li>
+                            <li>Submit transactions to the network.</li>
+                            <li>Interact with smart contracts.</li>
+                        </ul>
+                        In simple terms, RPCs are like a messenger. They take
+                        your request (e.g., check balance) from the wallet,
+                        forward it to a node on the blockchain, and bring back
+                        the result.
+                    </p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">2. Why Do
+                        Wallets Need to Connect to RPCs?</h4>
+                    <p class=" mb-4">
+                        Wallets need real-time data from the blockchain to
+                        provide useful functionality, such as:
+                        <ul class="list-disc list-inside">
+                            <li>Checking balances of cryptocurrencies.</li>
+                            <li>Viewing transaction history.</li>
+                            <li>Sending or signing transactions.</li>
+                            <li>Interacting with decentralized applications
+                                (dApps) or smart contracts.</li>
+                        </ul>
+                        Wallets don't run full blockchain nodes on your device,
+                        as that would be too resource-intensive. Instead, they
+                        connect to existing nodes via RPCs to interact with the
+                        blockchain.
+                    </p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">3. How Wallets
+                        Connect to RPCs</h4>
+                    <p class=" mb-4">
+                        <strong>Step 1: Choosing a Node (RPC
+                            Endpoint)</strong><br />
+                        A node is a computer that participates in the blockchain
+                        network, maintaining a copy of the blockchain and
+                        processing transactions. Wallets are configured to
+                        connect to specific nodes using an RPC endpoint. An RPC
+                        endpoint is simply a URL or IP address where a
+                        blockchain node can be accessed.
+                        <br />
+                        Example of an Ethereum RPC endpoint: <code
+                            class="bg-gray-100 p-1">https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID</code>.
+                        Wallets like MetaMask, Trust Wallet, or Phantom (for
+                        Solana) come pre-configured with RPC endpoints for
+                        different blockchains like Ethereum, Binance Smart
+                        Chain, or Solana.
+                    </p>
+
+                    <p class=" mb-4">
+                        <strong>Step 2: Sending RPC Requests</strong><br />
+                        The wallet uses the RPC endpoint to communicate with the
+                        node. Common types of requests include:
+                        <ul class="list-disc list-inside">
+                            <li>Get Balance: Asking the node for the balance of
+                                a particular address.</li>
+                            <li>Send Transaction: Broadcasting a signed
+                                transaction to the blockchain for
+                                validation.</li>
+                            <li>Call Smart Contract Method: Querying a smart
+                                contract’s state or executing a function on the
+                                contract.</li>
+                        </ul>
+                        Wallets make these requests through simple HTTP or
+                        WebSocket connections. The request follows a specific
+                        format (typically JSON-RPC), and the node responds with
+                        the requested data.
+                    </p>
+
+                    <p class=" mb-4">
+                        <strong>Example: Checking Ethereum Balance</strong>
+                        <pre class="bg-gray-100 p-2 rounded-md">
+                        {
+                          "jsonrpc": "2.0",
+                          "method": "eth_getBalance",
+                          "params": ["0xYourAddress", "latest"],
+                          "id": 1
+                        }
+                      </pre>
+                    </p>
+
+                    <p class=" mb-4">
+                        <strong>Step 3: Receiving and Displaying
+                            Responses</strong><br />
+                        Once the blockchain node processes the request, it sends
+                        a response back to the wallet. For example, when
+                        checking an Ethereum balance, the node returns the
+                        balance in wei. The wallet converts this raw data into a
+                        user-friendly format (like ETH or USD) and displays it
+                        in the interface.
+                    </p>
+
+                    <p class=" mb-4">
+                        <strong>Customizing RPC Endpoints in
+                            Wallets</strong><br />
+                        Wallets often allow users to change the default RPC
+                        endpoints. This can be useful if a user wants to:
+                        <ul class="list-disc list-inside">
+                            <li>Connect to a private or local node.</li>
+                            <li>Use a different provider (e.g., switching from
+                                Infura to Alchemy).</li>
+                            <li>Improve performance (some RPCs may be faster
+                                than others).</li>
+                        </ul>
+                        In MetaMask, you can add custom RPC endpoints by going
+                        to "Settings > Networks" and configuring a new network.
+                    </p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">4. Security
+                        Considerations</h4>
+                    <p class=" mb-4">
+                        Using trusted RPC endpoints is important, as malicious
+                        or unreliable nodes could return incorrect data or even
+                        try to compromise transactions. Most popular wallets use
+                        well-known providers like Infura, Alchemy, or Binance to
+                        connect to their blockchains.
+                    </p>
+
+                    <h4 class="text-lg font-semibold mt-4 mb-2">5. Connecting
+                        via WebSockets</h4>
+                    <p class=" mb-4">
+                        For real-time updates (e.g., receiving transaction
+                        confirmations as they happen), wallets may use
+                        WebSockets instead of HTTP. WebSockets allow the node to
+                        push new data to the wallet as soon as it becomes
+                        available, without the wallet needing to constantly poll
+                        the node for updates.
+                    </p>
+                </div>
+
+            </section>
+        </main>
+
+        <footer class="bg-gray-50 p-6 text-center text-black">
+            <p>&copy; 2024 Web3World. All rights reserved.</p>
+        </footer>
+    </body>
+</html>
