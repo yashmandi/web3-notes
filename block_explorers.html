@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Inter Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Block Explorers</title>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.92rem;
+
+        color: #1f2937;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="bg-gray-50 p-6 text-center text-black items-center">
+      <nav>
+        <ul class="flex space-x-4 justify-between">
+          <div>
+            <h1 class="pl-72">
+              <a href="index.html" class="text-black hover:underline"
+                >Web3World</a
+              >
+            </h1>
+          </div>
+          <div class="flex space-x-6 pr-72">
+            <li>
+              <a href="index.html" class="text-black hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="resources.html" class="text-black hover:underline"
+                >Resources</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <h1 class="pt-24 text-xl">Advanced Topics</h1>
+      <h1 class="text-black text-6xl pt-3">Block Explorers</h1>
+    </header>
+
+    <main class="p-12 pl-80 pr-80">
+      <section class="my-6">
+        <h2 class="text-xl font-semibold mt-6 mb-2">What are Block Explorers</h2>
+
+        <p class=" mb-4">
+          Block explorers are online tools that allow users to view and navigate
+          blockchain data, providing an accessible interface for tracking
+          transactions, blocks, and addresses.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Key Features</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            <strong>Transaction Tracking:</strong> Search for transactions by
+            transaction IDs (TXIDs) to view details like amounts,
+            sender/receiver addresses, and confirmation status.
+          </li>
+          <li>
+            <strong>Block Information:</strong> Access details about specific
+            blocks, including block height, timestamp, and transaction count.
+          </li>
+          <li>
+            <strong>Address Lookup:</strong> Enter wallet addresses to see all
+            associated transactions, helping users monitor their activity.
+          </li>
+          <li>
+            <strong>Network Statistics:</strong> View real-time blockchain
+            metrics, such as current block height, average fees, and network
+            hash rate.
+          </li>
+          <li>
+            <strong>Token Information:</strong> Get details on various tokens
+            and their transaction histories on multi-token blockchains.
+          </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">How They Work</h2>
+        <p class=" mb-4">
+          Block explorers connect to blockchain networks to retrieve data,
+          presenting it in a user-friendly format. They use APIs for real-time
+          information updates.
+        </p>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Benefits</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            <strong>Transparency:</strong> Enhance transaction verification and
+            auditing.
+          </li>
+          <li>
+            <strong>Accessibility:</strong> Simplify blockchain data for
+            non-technical users.
+          </li>
+          <li>
+            <strong>Security:</strong> Confirm the status of transactions
+            effectively.
+          </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">Popular Examples</h2>
+        <ul class="list-disc list-inside mb-4">
+          <li><strong>Etherscan:</strong> For Ethereum transactions.</li>
+          <li>
+            <strong>Blockchain.com Explorer:</strong> For Bitcoin transactions.
+          </li>
+          <li><strong>Solscan:</strong> For Solana blockchain data.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="bg-gray-50 p-6 text-center text-black">
+      <p>&copy; 2024 Web3World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
