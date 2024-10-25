@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Inter Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Automatic Market Maker (AMM)</title>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.92rem;
+
+        color: #1f2937;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="bg-gray-50 p-6 text-center text-black items-center">
+      <nav>
+        <ul class="flex space-x-4 justify-between">
+          <div>
+            <h1 class="pl-72">
+              <a href="index.html" class="text-black hover:underline"
+                >Web3World</a
+              >
+            </h1>
+          </div>
+          <div class="flex space-x-6 pr-72">
+            <li>
+              <a href="index.html" class="text-black hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="resources.html" class="text-black hover:underline"
+                >Resources</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <h1 class="pt-24 text-lg">Advanced Topics</h1>
+      <h1 class="text-black text-6xl pt-3">Automatic Market Maker (AMM)</h1>
+    </header>
+
+    <main class="p-12 pl-80 pr-80">
+      <section class="my-6">
+        <h2 class="text-lg font-semibold mt-6 mb-2">
+          What is an Automated Market Maker (AMM)?
+          </h2>
+        <p class=" mb-4">
+          An Automated Market Maker (AMM) is a type of software (usually a smart
+          contract) that automatically sets the price of digital assets and
+          allows users to trade them on a decentralized platform. It eliminates
+          the need for traditional order books (used by centralized exchanges
+          like Binance) and instead uses a formula to determine asset prices.
+        </p>
+        <p class=" mb-4">
+          In simple terms, think of an AMM as a vending machine: you put in one
+          type of token (e.g., Ethereum) and get out another (e.g., USDC). The
+          price you pay for the second token depends on how much is available in
+          the "pool" (like how a vending machine changes prices based on
+          supply).
+        </p>
+        <h2 class="text-lg font-semibold mt-6 mb-2">
+          Example: A Basic Trade on an AMM
+        </h2>
+        <p class=" mb-4">
+          Let’s say you’re on a decentralized exchange that uses an AMM, like
+          Uniswap, and you want to trade ETH for USDC. Here's how the process
+          would look:
+        </p>
+        <h3 class="text-lg font-semibold mt-4 mb-2">Liquidity Pool Setup:</h3>
+        <p class=" mb-4">
+          There's a liquidity pool with 100 ETH and 200,000 USDC. This pool has
+          been funded by users called liquidity providers (more on that later).
+          The product of these two amounts, 100 ETH x 200,000 USDC, equals
+          20,000,000, which is the constant k.
+        </p>
+        <h3 class="text-lg font-semibold mt-4 mb-2">You Buy ETH:</h3>
+        <p class=" mb-4">
+          You want to buy 10 ETH from the pool. When you take 10 ETH out, the
+          amount of ETH left in the pool decreases to 90 ETH. To maintain the
+          constant product, the amount of USDC in the pool must increase. This
+          will drive the price of ETH higher.
+        </p>
+        <p class=" mb-4">
+          Here's the math: After you buy 10 ETH, the formula becomes:
+          <span class="font-semibold">90 · y = 20,000,000</span>. Solving for y
+          gives <span class="font-semibold">222,222 USDC</span>, meaning the
+          pool now has 222,222 USDC. Therefore, to buy 10 ETH, you have to pay
+          the difference:
+          <span class="font-semibold"
+            >222,222 USDC - 200,000 USDC = 22,222 USDC</span
+          >.
+        </p>
+        <p class=" mb-4">
+          So, you pay 22,222 USDC to get 10 ETH. The price of ETH has increased
+          because there's now less ETH in the pool and more USDC.
+        </p>
+        <h2 class="text-lg font-semibold mt-6 mb-2">
+          Automated Pricing Without Order Books
+        </h2>
+        <p class=" mb-4">
+          On centralized exchanges, trades rely on order books, where buyers
+          place bids at their preferred price and sellers place offers. However,
+          this system requires human interaction or bots, which can slow things
+          down. AMMs automate the pricing and trade process using algorithms.
+          Instead of matching buyers and sellers, AMMs match buyers and
+          liquidity pools, allowing users to trade instantly. The pricing is
+          handled automatically based on the ratio of tokens in the pool.
+        </p>
+        <h2 class="text-lg font-semibold mt-6 mb-2">
+          How AMM Pools Change Prices
+        </h2>
+        <p class=" mb-4">
+          AMMs use supply and demand to change prices dynamically: when a token
+          is bought, the price of that token rises because its supply in the
+          pool decreases; when a token is sold, the price of that token falls
+          because its supply in the pool increases. The more a token is traded
+          in one direction, the more the price moves in that direction. This is
+          called slippage, and it happens because the AMM adjusts prices based
+          on the current state of the liquidity pool.
+        </p>
+        <p class=" mb-4">
+          Automated Market Makers (AMMs) are a critical innovation in
+          decentralized finance, enabling token swaps without relying on
+          traditional buyers and sellers. By using smart contracts and
+          mathematical formulas, AMMs provide constant liquidity, decentralized
+          trading, and the ability for users to earn passive income as liquidity
+          providers. Despite the benefits, they come with certain risks like
+          impermanent loss and slippage, which users need to understand before
+          participating in AMM-based trading or liquidity provision.
+        </p>
+      </section>
+    </main>
+
+    <footer class="bg-gray-50 p-6 text-center text-black">
+      <p>&copy; 2024 Web3World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
