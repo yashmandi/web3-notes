@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Inter Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Native Tokens vs ERC-20 Tokens</title>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.92rem;
+
+        color: #1f2937;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="bg-gray-50 p-6 text-center text-black items-center">
+      <nav>
+        <ul class="flex space-x-4 justify-between">
+          <div>
+            <h1 class="pl-72">
+              <a href="index.html" class="text-black hover:underline"
+                >Web3World</a
+              >
+            </h1>
+          </div>
+          <div class="flex space-x-6 pr-72">
+            <li>
+              <a href="index.html" class="text-black hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="resources.html" class="text-black hover:underline"
+                >Resources</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <h1 class="pt-24 text-xl">Exploring Networks</h1>
+      <h1 class="text-black text-6xl pt-3">Native Tokens vs ERC-20 Tokens</h1>
+    </header>
+
+    <main class="p-12 pl-80 pr-80">
+      <section class="my-6">
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold  mb-2">
+            1. Native Tokens
+          </h2>
+          <p class="600 mb-4">
+            A native token is the primary cryptocurrency of a blockchain
+            network. These tokens are integral to the blockchain and serve
+            multiple purposes, such as network security, transaction fees, and
+            governance.
+          </p>
+          <h3 class="font-semibold  mb-2">
+            Characteristics of Native Tokens:
+          </h3>
+          <ul class="list-disc ml-6  mb-4">
+            <li>
+              <strong>Blockchain’s Core Currency:</strong> Native tokens are
+              built into the base layer of the blockchain protocol, essential
+              for paying transaction fees and incentivizing miners/validators.
+            </li>
+            <li>
+              <strong>Block Reward:</strong> Miners or validators earn native
+              tokens as rewards for securing the network and validating
+              transactions.
+            </li>
+            <li>
+              <strong>Security and Decentralization:</strong> These tokens often
+              secure the blockchain through consensus mechanisms like Proof of
+              Stake (PoS) or Proof of Work (PoW).
+            </li>
+          </ul>
+          <h3 class="font-semibold  mb-2">
+            Examples of Native Tokens:
+          </h3>
+          <ul class="list-disc ml-6  mb-4">
+            <li>Bitcoin (BTC) on the Bitcoin network</li>
+            <li>Ether (ETH) on the Ethereum network</li>
+            <li>SOL on the Solana network</li>
+            <li>DOT on the Polkadot network</li>
+          </ul>
+          <h3 class="font-semibold  mb-2">Use Cases:</h3>
+          <ul class="list-disc ml-6 ">
+            <li>
+              <strong>Transaction Fees:</strong> Transaction fees are paid in
+              the native token (e.g., ETH for gas fees on Ethereum).
+            </li>
+            <li>
+              <strong>Staking and Consensus:</strong> Native tokens are used for
+              staking in Proof of Stake systems, contributing to network
+              security.
+            </li>
+            <li>
+              <strong>Governance:</strong> In some blockchains, native tokens
+              give holders voting power in governance decisions.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Section 2: ERC-20 Tokens -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold  mb-2">
+            2. ERC-20 Tokens
+          </h2>
+          <p class="600 mb-4">
+            An ERC-20 token is built using smart contracts on the Ethereum
+            blockchain (or an equivalent token on other smart contract platforms
+            like Solana or Binance Smart Chain). These tokens adhere to a
+            standard defining their usage, transfer, and storage.
+          </p>
+          <h3 class="font-semibold  mb-2">
+            Characteristics of ERC-20 Tokens:
+          </h3>
+          <ul class="list-disc ml-6  mb-4">
+            <li>
+              <strong>Built on Existing Blockchain:</strong> ERC-20 tokens are
+              created using Ethereum’s smart contracts and aren’t native to the
+              blockchain.
+            </li>
+            <li>
+              <strong>Smart Contract-Based:</strong> Governed by smart contracts
+              ensuring the rules (e.g., transferability, supply) are enforced.
+            </li>
+            <li>
+              <strong>Interoperability:</strong> Easily integrated into wallets
+              and exchanges that support Ethereum.
+            </li>
+          </ul>
+          <h3 class="font-semibold  mb-2">
+            Examples of ERC-20 Tokens:
+          </h3>
+          <ul class="list-disc ml-6  mb-4">
+            <li>USDT (Tether): A stablecoin pegged to the U.S. dollar</li>
+            <li>UNI (Uniswap): Governance token of Uniswap DEX</li>
+            <li>LINK (Chainlink): Token for decentralized oracles</li>
+          </ul>
+          <h3 class="font-semibold  mb-2">Use Cases:</h3>
+          <ul class="list-disc ml-6 ">
+            <li>
+              <strong>dApp Usage:</strong> Used within decentralized
+              applications, like DeFi protocols, representing assets or
+              governance rights.
+            </li>
+            <li>
+              <strong>Fundraising and ICOs:</strong> Many projects launch ERC-20
+              tokens in ICOs to raise funds.
+            </li>
+            <li>
+              <strong>Liquidity Provision:</strong> Used to provide liquidity in
+              DeFi exchanges or lending protocols.
+            </li>
+          </ul>
+        </div>
+
+        <!-- Section 3: Native Tokens and Gas Fees -->
+        <div class="mb-8">
+          <h2 class="text-2xl font-semibold  mb-2">
+            3. Native Tokens and Gas Fees
+          </h2>
+          <p class="600 mb-4">
+            When using an ERC-20 token (or other tokens like BEP-20 on Binance
+            Smart Chain), you still need to use the native token of the
+            blockchain to pay for transaction fees. For example:
+          </p>
+          <ul class="list-disc ml-6  mb-4">
+            <li>
+              To send USDT (an ERC-20 token), you need ETH to cover gas fees on
+              the Ethereum network.
+            </li>
+          </ul>
+          <p class="600">
+            This means that while you can hold and use ERC-20 tokens, you’ll
+            always need a small balance of the native token (e.g., ETH) to
+            process transactions.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-50 p-6 text-center text-black">
+      <p>&copy; 2024 Web3World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
