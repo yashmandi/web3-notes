@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Inter Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Public Keys, Private Keys and Mnemonics</title>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.92rem;
+
+        color: #1f2937;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="bg-gray-50 p-6 text-center text-black items-center">
+      <nav>
+        <ul class="flex space-x-4 justify-between">
+          <div>
+            <h1 class="pl-72">
+              <a href="index.html" class="text-black hover:underline"
+                >Web3World</a
+              >
+            </h1>
+          </div>
+          <div class="flex space-x-6 pr-72">
+            <li>
+              <a href="index.html" class="text-black hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="resources.html" class="text-black hover:underline"
+                >Resources</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <h1 class="pt-24 text-xl">Advanced Topics</h1>
+      <h1 class="text-black text-6xl pt-3">
+        Public Keys, Private Keys <br />
+        and Mnemonics
+      </h1>
+    </header>
+
+    <main class="p-12 pl-80 pr-80">
+      <section class="my-6">
+        <h2 class="text-xl font-semibold mt-6 mb-2">
+          1. Public and Private Keys
+        </h2>
+        <p class=" mb-4">
+          Public and private keys are essential components of cryptography,
+          widely used in blockchain and cryptocurrencies to secure transactions.
+        </p>
+
+        <h3 class="text-lg font-medium mt-4 mb-2">Public Key</h3>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            <strong>What It Is:</strong> A public key is like your account
+            number. It’s a cryptographic code that allows others to send assets
+            to you.
+          </li>
+          <li>
+            <strong>Visibility:</strong> Meant to be shared publicly. Needed for
+            others to send assets.
+          </li>
+          <li>
+            <strong>Role:</strong> Can also verify digital signatures made by
+            the corresponding private key.
+          </li>
+        </ul>
+
+        <h3 class="text-lg font-medium mt-4 mb-2">Private Key</h3>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            <strong>What It Is:</strong> A private key is like your password,
+            giving control over your assets.
+          </li>
+          <li>
+            <strong>Security:</strong> Must never be shared. Whoever has this
+            key controls the wallet.
+          </li>
+          <li>
+            <strong>Role:</strong> Used to sign transactions, creating a digital
+            signature that verifies ownership.
+          </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">2. Mnemonic Phrases</h2>
+        <p class=" mb-4">
+          A mnemonic phrase (seed or recovery phrase) is a human-readable series
+          of words (usually 12, 18, or 24 words) that acts as a backup for your
+          private keys.
+        </p>
+
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            <strong>Purpose:</strong> Represents your private key in a
+            user-friendly way. If you lose access to your wallet, the phrase can
+            restore it.
+          </li>
+          <li>
+            <strong>Generated from Private Key:</strong> Created using an
+            algorithm from a private key, containing all information to recreate
+            it.
+          </li>
+          <li>
+            <strong>Importance:</strong> Never share this phrase; access to it
+            gives full control over your funds.
+          </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">
+          3. Creating Your Own Private Key
+        </h2>
+        <p class=" mb-4">
+          Most wallets generate a private key automatically, but you can create
+          one manually. Here’s how it works:
+        </p>
+
+        <h3 class="text-lg font-medium mt-4 mb-2">
+          How Private Keys Are Created
+        </h3>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            <strong>Random Generation:</strong> Private keys are very large
+            random numbers (e.g., in Ethereum, a 256-bit number).
+          </li>
+          <li>
+            <strong>Security:</strong> Key strength lies in randomness.
+            Predictable keys are vulnerable to hacking.
+          </li>
+        </ul>
+
+        <h3 class="text-lg font-medium mt-4 mb-2">
+          Steps to Create a Private Key
+        </h3>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            <strong>Manual Creation:</strong> Choose a random 256-bit number,
+            but randomness is challenging without secure software.
+          </li>
+          <li>
+            <strong>Example:</strong> A private key like Ethereum’s is a
+            64-character hexadecimal number.
+          </li>
+          <li>
+            <strong>Software Creation:</strong> Wallets like MetaMask and Trust
+            Wallet generate secure, random keys.
+          </li>
+        </ul>
+
+        <h3 class="text-lg font-medium mt-4 mb-2">Safety Measures</h3>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            <strong>Never Reuse a Key:</strong> Always generate a new key for a
+            new wallet.
+          </li>
+          <li>
+            <strong>Back Up Your Key:</strong> Store it securely (e.g., in cold
+            storage like a hardware wallet or offline).
+          </li>
+        </ul>
+
+        <h2 class="text-xl font-semibold mt-6 mb-2">
+          4. Differences Between Private Key and Mnemonic Phrase
+        </h2>
+        <ul class="list-disc list-inside mb-4">
+          <li>
+            <strong>Private Key:</strong> The cryptographic code giving full
+            control over your wallet.
+          </li>
+          <li>
+            <strong>Mnemonic Phrase:</strong> A user-friendly series of words
+            that can recover your private key as a backup.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="bg-gray-50 p-6 text-center text-black">
+      <p>&copy; 2024 Web3World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
