@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Inter Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Solana</title>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.92rem;
+
+        color: #1f2937;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="bg-gray-50 p-6 text-center text-black items-center">
+      <nav>
+        <ul class="flex space-x-4 justify-between">
+          <div>
+            <h1 class="pl-72">
+              <a href="index.html" class="text-black hover:underline"
+                >Web3World</a
+              >
+            </h1>
+          </div>
+          <div class="flex space-x-6 pr-72">
+            <li>
+              <a href="index.html" class="text-black hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="resources.html" class="text-black hover:underline"
+                >Resources</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <h1 class="pt-24 text-xl">Additional Networks</h1>
+      <h1 class="text-black text-6xl pt-3">Solana</h1>
+    </header>
+
+    <main class="p-12 pl-80 pr-80">
+      <section class="my-6">
+        <!-- Section 1: Introduction -->
+        <h2 class="text-xl font-bold mt-4 mb-2">1. Introduction to Solana</h2>
+        <ul class="list-disc list-inside">
+          <li>
+            <strong>What is Solana?</strong> - High-performance blockchain for
+            dApps and cryptocurrencies, known for its scalability and low
+            transaction costs.
+          </li>
+          <li>
+            <strong>Launch and Development:</strong> - Launched in March 2020 by
+            Solana Labs to solve scalability issues seen in earlier blockchains
+            like Bitcoin and Ethereum.
+          </li>
+        </ul>
+
+        <!-- Section 2: Architecture -->
+        <h2 class="text-xl font-bold mt-4 mb-2">2. Solana’s Unique Architecture</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            <strong>Proof of History (PoH):</strong> Cryptographic clock that
+            keeps track of time without traditional consensus.
+          </li>
+          <li>
+            <strong>Proof of Stake (PoS):</strong> Validators stake SOL to
+            validate transactions securely.
+          </li>
+          <li>
+            <strong>Tower BFT:</strong> Optimized Byzantine Fault Tolerance
+            leveraging PoH for efficient consensus.
+          </li>
+          <li>
+            <strong>Gulf Stream:</strong> Mempool-less protocol for faster
+            transaction processing.
+          </li>
+          <li>
+            <strong>Sealevel:</strong> Allows parallel execution of thousands of
+            smart contracts, enhancing scalability.
+          </li>
+          <li>
+            <strong>Turbine:</strong> Block propagation protocol that breaks
+            data into smaller pieces for efficient transmission.
+          </li>
+        </ul>
+
+        <!-- Section 3: Performance -->
+        <h2 class="text-xl font-bold mt-4 mb-2">3. Solana’s Performance</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            <strong>Transaction Speed:</strong> Processes up to 65,000 TPS with
+            low latency.
+          </li>
+          <li>
+            <strong>Low Fees:</strong> Transaction costs are typically a
+            fraction of a cent.
+          </li>
+          <li>
+            <strong>Scalability:</strong> Architectural innovations allow high
+            transaction throughput without sacrificing performance.
+          </li>
+        </ul>
+
+        <!-- Section 4: Ecosystem -->
+        <h2 class="text-xl font-bold mt-4 mb-2">4. Solana Ecosystem</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            <strong>dApps and DeFi:</strong> Hub for decentralized applications
+            and DeFi projects due to its speed and cost-effectiveness.
+          </li>
+          <li>
+            <strong>NFTs:</strong> Gaining traction with NFT projects due to low
+            fees and fast processing times.
+          </li>
+          <li>
+            <strong>Solana Foundation:</strong> Non-profit supporting
+            development and growth through grants and resources.
+          </li>
+        </ul>
+
+        <!-- Section 5: SOL Token -->
+        <h2 class="text-xl font-bold mt-4 mb-2">5. SOL Token</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            <strong>Native Cryptocurrency:</strong> Used for transaction fees,
+            staking, and governance.
+          </li>
+          <li>
+            <strong>Staking:</strong> SOL holders can earn rewards by staking or
+            delegating tokens.
+          </li>
+          <li>
+            <strong>Supply:</strong> Deflationary model with decreasing
+            inflation rate over time.
+          </li>
+        </ul>
+
+        <!-- Section 6: Comparison -->
+        <h2 class="text-xl font-bold mt-4 mb-2">6. Comparison with Other Blockchains</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            <strong>Ethereum vs. Solana:</strong>
+            <ul class="list-disc list-inside pl-4">
+              <li>
+                Speed & Cost: Solana’s 65,000 TPS vs. Ethereum’s 30 TPS on
+                Ethereum 1.0.
+              </li>
+              <li>
+                Consensus Mechanism: Solana uses PoH + PoS, while Ethereum
+                transitions from PoW to PoS.
+              </li>
+            </ul>
+          </li>
+          <li>
+            <strong>Bitcoin vs. Solana:</strong>
+            <ul class="list-disc list-inside pl-4">
+              <li>
+                Use Case: Solana for dApps/DeFi vs. Bitcoin as a store of value.
+              </li>
+              <li>
+                Transaction Speed & Fees: Solana’s low fees vs. Bitcoin’s higher
+                fees during congestion.
+              </li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Section 7: Challenges -->
+        <h2 class="text-xl font-bold mt-4 mb-2">7. Challenges and Criticisms</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            <strong>Centralization Concerns:</strong> High performance may come
+            at the cost of decentralization.
+          </li>
+          <li>
+            <strong>Network Outages:</strong> Occasional outages have affected
+            service stability.
+          </li>
+          <li>
+            <strong>Early Development:</strong> Being a younger blockchain
+            brings certain risks.
+          </li>
+        </ul>
+
+        <!-- Section 8: Future Prospects -->
+        <h2 class="text-xl font-bold mt-4 mb-2">8. Future Prospects</h2>
+        <ul class="list-disc list-inside space-y-2">
+          <li>
+            <strong>Growth of Ecosystem:</strong> Expanding rapidly with dApps,
+            DeFi, and NFTs.
+          </li>
+          <li>
+            <strong>Innovation:</strong> Continuous improvements aim to enhance
+            stability and decentralization.
+          </li>
+          <li>
+            <strong>Adoption:</strong> Likely to grow in popularity as users
+            recognize its advantages.
+          </li>
+        </ul>
+
+        <!-- Section 9: Conclusion -->
+        <h2 class="text-xl font-bold mt-4 mb-2">9. Conclusion</h2>
+        <ul class="list-disc list-inside">
+          <li>
+            Solana offers a high-performance blockchain solution with unique PoH
+            + PoS architecture, speed, and efficiency. Challenges remain, but
+            the ecosystem’s rapid growth and SOL token’s utility signal strong
+            future potential.
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer class="bg-gray-50 p-6 text-center text-black">
+      <p>&copy; 2024 Web3World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
