@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Inter Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Tokens and Non-Fungible Tokens (NFTs)</title>
+
+    <style>
+      body {
+        font-family: "Inter", sans-serif;
+        font-size: 0.92rem;
+
+        color: #1f2937;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="bg-gray-50 p-6 text-center text-black items-center">
+      <nav>
+        <ul class="flex space-x-4 justify-between">
+          <div>
+            <h1 class="pl-72">
+              <a href="index.html" class="text-black hover:underline"
+                >Web3World</a
+              >
+            </h1>
+          </div>
+          <div class="flex space-x-6 pr-72">
+            <li>
+              <a href="index.html" class="text-black hover:underline">Home</a>
+            </li>
+            <li>
+              <a href="resources.html" class="text-black hover:underline"
+                >Resources</a
+              >
+            </li>
+          </div>
+        </ul>
+      </nav>
+      <h1 class="pt-24 text-xl">Exploring Networks</h1>
+      <h1 class="text-black text-6xl pt-3">
+        Tokens and Non-Fungible Tokens (NFTs)
+      </h1>
+    </header>
+
+    <main class="p-12 pl-80 pr-80">
+      <section class="my-6">
+
+        <!-- Section for Tokens -->
+        <div >
+          <h2 class="text-xl font-semibold -700 mb-4">1. Tokens</h2>
+          <p class="-600 mb-4">
+            Tokens are digital assets that represent ownership or utility within
+            a blockchain network. They can have various forms and purposes, such
+            as representing cryptocurrencies, rights, or services within a
+            platform.
+          </p>
+          <ul class="list-disc ml-6 -700 mb-6">
+            <li>
+              <strong>Fungibility:</strong> Most tokens are fungible, meaning
+              each unit is identical and interchangeable with another. For
+              example, one Bitcoin is always equal to another in value.
+            </li>
+            <li>
+              <strong>Built on Blockchain:</strong> Tokens are created on
+              existing blockchains, like Ethereum, Binance Smart Chain, or
+              Solana, using smart contracts.
+            </li>
+            <li>
+              <strong>Utility:</strong> Tokens can have different use cases,
+              such as:
+              <ul class="list-disc ml-6">
+                <li>Payment Tokens (e.g., Ethereum’s ETH)</li>
+                <li>
+                  Governance Tokens (giving voting power in decentralized
+                  platforms)
+                </li>
+                <li>
+                  Utility Tokens (accessing services or features within a
+                  specific platform)
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <p class="-600 mb-4">
+            <strong>Token Standards:</strong> Tokens follow specific rules or
+            standards on different blockchains:
+          </p>
+          <ul class="list-disc ml-6 -700">
+            <li>ERC-20 (Ethereum) for fungible tokens</li>
+            <li>BEP-20 (Binance Smart Chain) for similar fungible tokens</li>
+          </ul>
+          <p class="-600 mt-4">
+            <strong>Example:</strong>
+            <span class="-700">USDT (Tether)</span> - a stablecoin
+            pegged to the value of the US dollar, meaning 1 USDT always equals
+            another USDT.
+          </p>
+        </div>
+
+        <!-- Section for NFTs -->
+        <div class="mb-10">
+          <h2 class="text-xl mt-4 font-semibold -700 mb-1">
+            2. Non-Fungible Tokens (NFTs)
+          </h2>
+          <p class="-600 mb-4">
+            Non-Fungible Tokens (NFTs) are unique, non-interchangeable assets on
+            the blockchain, unlike fungible tokens where each unit holds the
+            same value.
+          </p>
+          <ul class="list-disc ml-6 -700 mb-6">
+            <li>
+              <strong>Uniqueness:</strong> Each NFT is one-of-a-kind and cannot
+              be exchanged on a 1:1 basis with another NFT, making them ideal
+              for representing ownership of digital art, collectibles, or
+              real-world assets.
+            </li>
+            <li>
+              <strong>Ownership:</strong> NFTs provide proof of ownership over
+              digital assets, like art, music, and virtual real estate, all
+              recorded on the blockchain.
+            </li>
+            <li>
+              <strong>Indivisibility:</strong> NFTs are typically indivisible,
+              meaning they can’t be split into smaller parts.
+            </li>
+          </ul>
+          <p class="-600 mb-4">
+            <strong>How NFTs Work:</strong> NFTs are created using smart
+            contracts on blockchain networks like Ethereum or Solana. They
+            follow specific standards:
+          </p>
+          <ul class="list-disc ml-6 -700">
+            <li>ERC-721 (Ethereum) for non-fungible tokens</li>
+            <li>BEP-721 (Binance Smart Chain) for NFTs</li>
+          </ul>
+          <p class="-600 mt-4"><strong>Use Cases:</strong></p>
+          <ul class="list-disc ml-6 -700">
+            <li>
+              Digital Art: Artists sell their work as NFTs, with ownership
+              recorded on the blockchain.
+            </li>
+            <li>
+              Collectibles: NFTs represent virtual trading cards, in-game items,
+              or rare collectibles.
+            </li>
+            <li>
+              Virtual Real Estate: NFTs allow buying and selling land in virtual
+              worlds like Decentraland or The Sandbox.
+            </li>
+          </ul>
+          <p class="-600 mt-4">
+            <strong>Example:</strong>
+            <span class="-700">CryptoPunks</span> - one of the earliest
+            NFT projects on Ethereum, where each digital character is unique and
+            highly collectible.
+          </p>
+        </div>
+
+        <!-- Comparison Table -->
+        <div class="overflow-x-auto mb-10">
+          <table class="w-full bg-white shadow-md rounded-lg border-collapse">
+            <thead class="bg-gray-200">
+              <tr>
+                <th class="p-4 text-left -700 font-semibold border-b">
+                  Feature
+                </th>
+                <th class="p-4 text-left -700 font-semibold border-b">
+                  Tokens
+                </th>
+                <th class="p-4 text-left -700 font-semibold border-b">
+                  Non-Fungible Tokens (NFTs)
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-4 border-b">Fungibility</td>
+                <td class="p-4 border-b">
+                  Fungible (identical and interchangeable)
+                </td>
+                <td class="p-4 border-b">
+                  Non-Fungible (unique, not interchangeable)
+                </td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b">Use Case</td>
+                <td class="p-4 border-b">
+                  Currency, governance, access to services
+                </td>
+                <td class="p-4 border-b">
+                  Digital art, collectibles, real estate
+                </td>
+              </tr>
+              <tr>
+                <td class="p-4 border-b">Divisibility</td>
+                <td class="p-4 border-b">Can be divided into smaller units</td>
+                <td class="p-4 border-b">Indivisible (usually)</td>
+              </tr>
+              <tr class="bg-gray-50">
+                <td class="p-4 border-b">Standards</td>
+                <td class="p-4 border-b">ERC-20, BEP-20</td>
+                <td class="p-4 border-b">ERC-721, BEP-721</td>
+              </tr>
+              <tr>
+                <td class="p-4">Example</td>
+                <td class="p-4">Bitcoin, USDT, ETH</td>
+                <td class="p-4">CryptoPunks, Bored Ape Yacht Club</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="mt-8 -700">
+          <h2 class="text-xl font-semibold mb-2">Summary</h2>
+          <p class="mb-4">
+            Tokens are fungible digital assets that are interchangeable and
+            divisible. They are primarily used in the context of
+            cryptocurrencies, governance, and utility within decentralized
+            applications, and follow standards like ERC-20.
+          </p>
+          <p>
+            Non-Fungible Tokens (NFTs) are unique digital assets that cannot be
+            exchanged one-to-one because each NFT is distinct. They represent
+            ownership of digital or physical assets, with applications in
+            digital art, collectibles, and virtual real estate, and follow
+            standards like ERC-721.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-50 p-6 text-center text-black">
+      <p>&copy; 2024 Web3World. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
