@@ -1,6 +1,21 @@
-// JavaScript for form submission and any other interactive functionality
-document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent the default form submission behavior
-    alert('Thank you for your message! We will get back to you soon.');
-    this.reset(); // Reset the form fields
-});
+// Function to start the loader before page navigation
+function setupNProgress() {
+    const links = document.querySelectorAll("a");
+
+    links.forEach(link => {
+        link.addEventListener("click", function (event) {
+            if (link.getAttribute("href").endsWith(".html")) { // Check for HTML links only
+                event.preventDefault(); // Prevent immediate navigation
+                NProgress.start(); // Start the nprogress loader
+                
+                // Delay to allow nprogress to show before navigating
+                setTimeout(() => {
+                    window.location.href = link.href;
+                }, 300); // Adjust the timeout as needed
+            }
+        });
+    });
+}
+
+// Initialize NProgress setup when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", setupNProgress);
